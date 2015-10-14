@@ -1,5 +1,5 @@
 //
-//  NeedsHandler.swift
+//  NeedHandler.swift
 //  Where2Help
 //
 //  Created by Aaron Cruz on 10/11/15.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol NeedsHandler {
-    
+protocol NeedHandler {
+    func handleLoadNeeds(needs: [Need])
 }

@@ -8,16 +8,14 @@
 
 import UIKit
 
-class NeedsListViewController: UITableViewController, NeedsHandler {
+class NeedsListViewController: UITableViewController, NeedHandler {
     var storeNeeds: [Need] = []
+    var needInteractor: NeedInteractor!
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("start")
-        NeedsStore.needs{ needs in
-            self.storeNeeds = needs
-            self.tableView.reloadData()
-        }
+        needInteractor = NeedInteractor(handler: self)
+        needInteractor.load()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,9 +30,15 @@ class NeedsListViewController: UITableViewController, NeedsHandler {
         return cell
     }
     
+    // MARK: - Handlers
+    
+    func handleLoadNeeds(needs: [Need]) {
+        self.storeNeeds = needs
+        self.tableView.reloadData()
+    }
+    
     // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let id = segue.identifier {
             switch id {
@@ -47,7 +51,5 @@ class NeedsListViewController: UITableViewController, NeedsHandler {
                 break
             }
         }
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
     }
 }
