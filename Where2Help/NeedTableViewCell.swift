@@ -12,19 +12,18 @@ class NeedTableViewCell: UITableViewCell {
     
     var need: Need?
     
+    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var volunteerCountLabel: UILabel!
-    @IBOutlet weak var volunteerTypeLabel: UILabel!
-    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var volunteerCategoryLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var startTimeLabel: UILabel!
-    @IBOutlet weak var endTimeLabel: UILabel!
+    @IBOutlet weak var timeDurationLabel: UILabel!
     
     func setFields() {
-        volunteerCountLabel.text = "\(need!.volunteersNeeded! - need!.volunteersCount!)"
-        volunteerTypeLabel.text = need!.category
-        cityLabel.text = need!.city
-        locationLabel.text = need!.location
-        startTimeLabel.text = need!.startTime
-        endTimeLabel.text = need!.endTime
+        let presenter = NeedPresenter(need: need!)
+        volunteerCountLabel.text = presenter.volunteerCount()
+        volunteerCategoryLabel.text = presenter.needCatTitle()
+        locationLabel.text = presenter.location()
+        timeDurationLabel.text = presenter.timeDuration()
+        iconImageView.image = presenter.icon()
     }
 }

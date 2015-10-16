@@ -26,70 +26,70 @@
         <scene sceneID="gLh-1Q-4qs">
             <objects>
                 <tableViewController id="kbP-hA-Ng5" customClass="NeedsListViewController" customModule="Where2Help" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" id="tAH-X8-4kf">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="tAH-X8-4kf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NeedCell" rowHeight="107" id="rDF-mv-Mbd" userLabel="NeedTableViewCell" customClass="NeedTableViewCell" customModule="Where2Help" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NeedCell" rowHeight="140" id="rDF-mv-Mbd" userLabel="NeedTableViewCell" customClass="NeedTableViewCell" customModule="Where2Help" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="107"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rDF-mv-Mbd" id="bJz-N6-jby">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="106.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC4-Si-bEB">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC4-Si-bEB">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="72" y="14" width="11" height="21"/>
+                                                <rect key="frame" x="80" y="5" width="51" height="45"/>
                                             </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRT-Jm-RcK">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="119" y="14" width="38" height="21"/>
+                                                <rect key="frame" x="135" y="13" width="257" height="30"/>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUu-lP-Q1t">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start time - End time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igr-vX-59k">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="72" y="43" width="31" height="21"/>
+                                                <rect key="frame" x="80" y="98" width="304" height="21"/>
                                             </variation>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETB-w7-tVH" userLabel="Icon">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="30" y="8" width="40" height="40"/>
+                                            </variation>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="Qz4-zF-GSc" userLabel="Pin">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="45" y="63" width="20" height="20"/>
+                                            </variation>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="izS-2Z-wVa" userLabel="Calendar">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="45" y="98" width="20" height="20"/>
+                                            </variation>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmr-ml-cAy">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="119" y="43" width="66" height="21"/>
-                                            </variation>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igr-vX-59k">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="72" y="72" width="99" height="21"/>
-                                            </variation>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T69-SM-DKR">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="189" y="71" width="110" height="21"/>
+                                                <rect key="frame" x="80" y="63" width="304" height="21"/>
                                             </variation>
                                         </label>
                                     </subviews>
@@ -97,30 +97,31 @@
                                         <mask key="subviews">
                                             <exclude reference="YC4-Si-bEB"/>
                                             <exclude reference="mRT-Jm-RcK"/>
-                                            <exclude reference="HUu-lP-Q1t"/>
-                                            <exclude reference="jmr-ml-cAy"/>
                                             <exclude reference="Igr-vX-59k"/>
-                                            <exclude reference="T69-SM-DKR"/>
+                                            <exclude reference="ETB-w7-tVH"/>
+                                            <exclude reference="Qz4-zF-GSc"/>
+                                            <exclude reference="izS-2Z-wVa"/>
+                                            <exclude reference="jmr-ml-cAy"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
                                         <mask key="subviews">
                                             <include reference="YC4-Si-bEB"/>
                                             <include reference="mRT-Jm-RcK"/>
-                                            <include reference="HUu-lP-Q1t"/>
-                                            <include reference="jmr-ml-cAy"/>
                                             <include reference="Igr-vX-59k"/>
-                                            <include reference="T69-SM-DKR"/>
+                                            <include reference="ETB-w7-tVH"/>
+                                            <include reference="Qz4-zF-GSc"/>
+                                            <include reference="izS-2Z-wVa"/>
+                                            <include reference="jmr-ml-cAy"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="cityLabel" destination="HUu-lP-Q1t" id="beB-IS-dCG"/>
-                                    <outlet property="endTimeLabel" destination="T69-SM-DKR" id="HP3-yl-tVs"/>
-                                    <outlet property="locationLabel" destination="jmr-ml-cAy" id="clA-PI-aHm"/>
-                                    <outlet property="startTimeLabel" destination="Igr-vX-59k" id="8ld-2o-esX"/>
-                                    <outlet property="volunteerCountLabel" destination="YC4-Si-bEB" id="wck-Mf-eq3"/>
-                                    <outlet property="volunteerTypeLabel" destination="mRT-Jm-RcK" id="9XQ-Nc-we5"/>
+                                    <outlet property="iconImageView" destination="ETB-w7-tVH" id="XE5-j3-jLD"/>
+                                    <outlet property="locationLabel" destination="jmr-ml-cAy" id="91x-az-YVy"/>
+                                    <outlet property="timeDurationLabel" destination="Igr-vX-59k" id="shs-FN-la6"/>
+                                    <outlet property="volunteerCategoryLabel" destination="mRT-Jm-RcK" id="oHG-6l-Df5"/>
+                                    <outlet property="volunteerCountLabel" destination="YC4-Si-bEB" id="XO0-rn-H88"/>
                                     <segue destination="W7j-5x-fr8" kind="show" identifier="ShowNeedDetail" id="XPc-uK-662"/>
                                 </connections>
                             </tableViewCell>
@@ -134,7 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OzE-Hp-BBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970.5" y="720"/>
+            <point key="canvasLocation" x="1059" y="712"/>
         </scene>
         <!--Needs Detail View Controller-->
         <scene sceneID="zWw-Hc-rcR">
@@ -145,12 +146,13 @@
                         <viewControllerLayoutGuide type="bottom" id="usj-va-SFg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="B7q-VH-wd5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh1-FU-6jT">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="179" y="87" width="42" height="21"/>
@@ -178,4 +180,8 @@
             <point key="canvasLocation" x="1821" y="720"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar" width="19" height="19"/>
+        <image name="pin" width="21" height="25"/>
+    </resources>
 </document>

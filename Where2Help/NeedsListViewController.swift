@@ -27,9 +27,13 @@ class NeedsListViewController: UITableViewController, NeedHandler {
         let cell:NeedTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("NeedCell") as! NeedTableViewCell
         cell.need = need
         cell.setFields()
+        cell.backgroundColor = ColorUtils.hexToUIColor(CellBackgroundColors[indexPath.row % 2])
         return cell
     }
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 140
+    }
     // MARK: - Handlers
     
     func handleLoadNeeds(needs: [Need]) {

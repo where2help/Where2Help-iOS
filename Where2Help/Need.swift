@@ -6,7 +6,7 @@
 //  Copyright © 2015 Aaron Cruz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Need {
     var category: String?
@@ -17,6 +17,8 @@ struct Need {
     var userID: Int?
     var volunteersCount: Int?
     var volunteersNeeded: Int?
+}
+
 //    "category": "general",
 //    "city": "Wien",
 //    "end-time": "2015-10-13T14:32:23.332+02:00",
@@ -25,5 +27,3 @@ struct Need {
 //    "user-id": 5,
 //    "volunteers-count": "0",
 //    "volunteers-needed": 1
-
-}

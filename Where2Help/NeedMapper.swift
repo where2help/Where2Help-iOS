@@ -6,8 +6,9 @@
 //  Copyright © 2015 Aaron Cruz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import SwiftyJSON
+
 class NeedMapper {
     class func map(json: JSON) -> [Need] {
         var needs: [Need] = []
@@ -20,10 +21,12 @@ class NeedMapper {
                 startTime: attr["start-time"].string,
                 location: attr["location"].string,
                 userID: attr["user-id"].int,
+
                 volunteersCount: attr["volunteers-count"].int,
                 volunteersNeeded: attr["volunteers-needed"].int)
             needs.append(need)
         }
         return needs
     }
+
 }
