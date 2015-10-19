@@ -10,6 +10,9 @@
 		930817171BCFEFF500E38519 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930817161BCFEFF500E38519 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
 		93285CB51BCBA85B00746E5F /* NeedsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93285CB41BCBA85B00746E5F /* NeedsDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9329BAFB1BCE51E100526030 /* NeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9329BAFA1BCE51E100526030 /* NeedInteractor.swift */; settings = {ASSET_TAGS = (); }; };
+		937BEBD71BD3DB16006025D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937BEBD61BD3DB16006025D8 /* MapKit.framework */; };
+		937BEBD91BD3DDC4006025D8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937BEBD81BD3DDC4006025D8 /* CoreLocation.framework */; };
+		939B7EF01BD4EBAF00447E02 /* NeedAnnotationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B7EEF1BD4EBAF00447E02 /* NeedAnnotationPresenter.swift */; settings = {ASSET_TAGS = (); }; };
 		93D42ECB1BCA7F890094A1E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42ECA1BCA7F890094A1E8 /* AppDelegate.swift */; };
 		93D42ED01BCA7F890094A1E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D42ECE1BCA7F890094A1E8 /* Main.storyboard */; };
 		93D42ED21BCA7F890094A1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D42ED11BCA7F890094A1E8 /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		930817161BCFEFF500E38519 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		93285CB41BCBA85B00746E5F /* NeedsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedsDetailViewController.swift; sourceTree = "<group>"; };
 		9329BAFA1BCE51E100526030 /* NeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedInteractor.swift; sourceTree = "<group>"; };
+		937BEBD61BD3DB16006025D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		937BEBD81BD3DDC4006025D8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		939B7EEF1BD4EBAF00447E02 /* NeedAnnotationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedAnnotationPresenter.swift; sourceTree = "<group>"; };
 		93D42EC71BCA7F890094A1E8 /* Where2Help.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Where2Help.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D42ECA1BCA7F890094A1E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93D42ECF1BCA7F890094A1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937BEBD91BD3DDC4006025D8 /* CoreLocation.framework in Frameworks */,
+				937BEBD71BD3DB16006025D8 /* MapKit.framework in Frameworks */,
 				95011317AD4409D384AA3FFF /* Pods_Where2Help.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,12 +118,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		930817151BCFEFB800E38519 /* Resources */ = {
+		939B7EF11BD4EC7600447E02 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				93D42ED11BCA7F890094A1E8 /* Assets.xcassets */,
+				93F7FD5E1BD135EE007B5E0E /* NeedPresenter.swift */,
+				939B7EEF1BD4EBAF00447E02 /* NeedAnnotationPresenter.swift */,
 			);
-			name = Resources;
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		939B7EF21BD4ECDE00447E02 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				93D42F021BCA94430094A1E8 /* NeedMapper.swift */,
+			);
+			name = Mappers;
+			sourceTree = "<group>";
+		};
+		939B7EF31BD4ECE300447E02 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				93D42EFC1BCA89C80094A1E8 /* NeedsStore.swift */,
+			);
+			name = Stores;
 			sourceTree = "<group>";
 		};
 		93D42EBE1BCA7F890094A1E8 = {
@@ -147,14 +172,16 @@
 				93D42ED31BCA7F890094A1E8 /* LaunchScreen.storyboard */,
 				93D42ECA1BCA7F890094A1E8 /* AppDelegate.swift */,
 				930817161BCFEFF500E38519 /* Constants.swift */,
+				93F7FD641BD14051007B5E0E /* Clients */,
 				93F7FD621BD14039007B5E0E /* Controllers */,
-				93F7FD631BD14046007B5E0E /* Helpers */,
-				93F7FD641BD14051007B5E0E /* Services */,
+				939B7EF21BD4ECDE00447E02 /* Mappers */,
 				93F7FD651BD14055007B5E0E /* Models */,
-				930817151BCFEFB800E38519 /* Resources */,
+				939B7EF11BD4EC7600447E02 /* Presenters */,
+				939B7EF31BD4ECE300447E02 /* Stores */,
 				93F7FD671BD140BB007B5E0E /* Views */,
 				93F7FD681BD140E0007B5E0E /* Utils */,
 				93D42ED61BCA7F890094A1E8 /* Info.plist */,
+				93D42ED11BCA7F890094A1E8 /* Assets.xcassets */,
 			);
 			path = Where2Help;
 			sourceTree = "<group>";
@@ -181,34 +208,25 @@
 			isa = PBXGroup;
 			children = (
 				93D42EF81BCA868D0094A1E8 /* NeedsListViewController.swift */,
+				93D42EFA1BCA86DF0094A1E8 /* NeedHandler.swift */,
 				9329BAFA1BCE51E100526030 /* NeedInteractor.swift */,
 				93285CB41BCBA85B00746E5F /* NeedsDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		93F7FD631BD14046007B5E0E /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-		93F7FD641BD14051007B5E0E /* Services */ = {
+		93F7FD641BD14051007B5E0E /* Clients */ = {
 			isa = PBXGroup;
 			children = (
 				93D42EFE1BCA89D50094A1E8 /* Where2HelpClient.swift */,
 			);
-			name = Services;
+			name = Clients;
 			sourceTree = "<group>";
 		};
 		93F7FD651BD14055007B5E0E /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				93D42F001BCA91FF0094A1E8 /* Need.swift */,
-				93D42EFA1BCA86DF0094A1E8 /* NeedHandler.swift */,
-				93D42EFC1BCA89C80094A1E8 /* NeedsStore.swift */,
-				93D42F021BCA94430094A1E8 /* NeedMapper.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -217,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				93D42F041BCAAEE90094A1E8 /* NeedTableViewCell.swift */,
-				93F7FD5E1BD135EE007B5E0E /* NeedPresenter.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -233,6 +250,8 @@
 		A31231F899846BC3B314B69C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				937BEBD81BD3DDC4006025D8 /* CoreLocation.framework */,
+				937BEBD61BD3DB16006025D8 /* MapKit.framework */,
 				A6A4B8E850B211D979CD3C52 /* Pods_Where2Help.framework */,
 			);
 			name = Frameworks;
@@ -426,6 +445,7 @@
 				93D42F031BCA94430094A1E8 /* NeedMapper.swift in Sources */,
 				93D42EFD1BCA89C80094A1E8 /* NeedsStore.swift in Sources */,
 				930817171BCFEFF500E38519 /* Constants.swift in Sources */,
+				939B7EF01BD4EBAF00447E02 /* NeedAnnotationPresenter.swift in Sources */,
 				93F7FD5F1BD135EE007B5E0E /* NeedPresenter.swift in Sources */,
 				93285CB51BCBA85B00746E5F /* NeedsDetailViewController.swift in Sources */,
 				93D42F051BCAAEE90094A1E8 /* NeedTableViewCell.swift in Sources */,

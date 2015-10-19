@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Where2Help/NeedAnnotation.swift">
+   </FileRef>
+   <FileRef
       location = "group:Where2Help.xcodeproj">
    </FileRef>
    <FileRef

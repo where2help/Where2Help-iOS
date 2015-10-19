@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import MapKit
 
-class NeedsDetailViewController: UIViewController {
+class NeedsDetailViewController: UIViewController, MKMapViewDelegate {
     var need: Need!
     
-    @IBOutlet weak var volunteerTypeLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        volunteerTypeLabel.text = need.category
-        // Do any additional setup after loading the view.
+        mapView.delegate = self
+    }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let regionRadius = Double(1000)
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+            regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
     
     override func viewDidAppear(animated: Bool) {
