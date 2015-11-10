@@ -17,6 +17,8 @@ struct Need {
     var userID: Int?
     var volunteersCount: Int?
     var volunteersNeeded: Int?
+    var lat: Float64?
+    var lng: Float64?
 }
 
 //    "category": "general",

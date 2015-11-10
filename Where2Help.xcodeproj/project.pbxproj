@@ -7,27 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		930817171BCFEFF500E38519 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930817161BCFEFF500E38519 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
-		93285CB51BCBA85B00746E5F /* NeedsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93285CB41BCBA85B00746E5F /* NeedsDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9329BAFB1BCE51E100526030 /* NeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9329BAFA1BCE51E100526030 /* NeedInteractor.swift */; settings = {ASSET_TAGS = (); }; };
+		930817171BCFEFF500E38519 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930817161BCFEFF500E38519 /* Constants.swift */; };
+		93285CB51BCBA85B00746E5F /* NeedsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93285CB41BCBA85B00746E5F /* NeedsDetailViewController.swift */; };
+		9329BAFB1BCE51E100526030 /* NeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9329BAFA1BCE51E100526030 /* NeedInteractor.swift */; };
+		934FF3A01BF28639002BF5BF /* NeedDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934FF39F1BF28639002BF5BF /* NeedDetailInteractor.swift */; };
+		934FF3A21BF28656002BF5BF /* NeedDetailHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934FF3A11BF28656002BF5BF /* NeedDetailHandler.swift */; };
+		934FF3A81BF28E81002BF5BF /* NeedAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934FF3A71BF28E81002BF5BF /* NeedAnnotation.swift */; };
 		937BEBD71BD3DB16006025D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937BEBD61BD3DB16006025D8 /* MapKit.framework */; };
 		937BEBD91BD3DDC4006025D8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937BEBD81BD3DDC4006025D8 /* CoreLocation.framework */; };
-		939B7EF01BD4EBAF00447E02 /* NeedAnnotationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B7EEF1BD4EBAF00447E02 /* NeedAnnotationPresenter.swift */; settings = {ASSET_TAGS = (); }; };
+		939B7EF01BD4EBAF00447E02 /* NeedAnnotationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B7EEF1BD4EBAF00447E02 /* NeedAnnotationPresenter.swift */; };
 		93D42ECB1BCA7F890094A1E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42ECA1BCA7F890094A1E8 /* AppDelegate.swift */; };
 		93D42ED01BCA7F890094A1E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D42ECE1BCA7F890094A1E8 /* Main.storyboard */; };
 		93D42ED21BCA7F890094A1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D42ED11BCA7F890094A1E8 /* Assets.xcassets */; };
 		93D42ED51BCA7F890094A1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D42ED31BCA7F890094A1E8 /* LaunchScreen.storyboard */; };
 		93D42EE01BCA7F890094A1E8 /* Where2HelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EDF1BCA7F890094A1E8 /* Where2HelpTests.swift */; };
 		93D42EEB1BCA7F890094A1E8 /* Where2HelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EEA1BCA7F890094A1E8 /* Where2HelpUITests.swift */; };
-		93D42EF91BCA868D0094A1E8 /* NeedsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EF81BCA868D0094A1E8 /* NeedsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		93D42EFB1BCA86DF0094A1E8 /* NeedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EFA1BCA86DF0094A1E8 /* NeedHandler.swift */; settings = {ASSET_TAGS = (); }; };
-		93D42EFD1BCA89C80094A1E8 /* NeedsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EFC1BCA89C80094A1E8 /* NeedsStore.swift */; settings = {ASSET_TAGS = (); }; };
-		93D42EFF1BCA89D50094A1E8 /* Where2HelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EFE1BCA89D50094A1E8 /* Where2HelpClient.swift */; settings = {ASSET_TAGS = (); }; };
-		93D42F011BCA91FF0094A1E8 /* Need.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42F001BCA91FF0094A1E8 /* Need.swift */; settings = {ASSET_TAGS = (); }; };
-		93D42F031BCA94430094A1E8 /* NeedMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42F021BCA94430094A1E8 /* NeedMapper.swift */; settings = {ASSET_TAGS = (); }; };
-		93D42F051BCAAEE90094A1E8 /* NeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42F041BCAAEE90094A1E8 /* NeedTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		93F7FD5F1BD135EE007B5E0E /* NeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7FD5E1BD135EE007B5E0E /* NeedPresenter.swift */; settings = {ASSET_TAGS = (); }; };
-		93F7FD611BD13F06007B5E0E /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7FD601BD13F06007B5E0E /* ColorUtils.swift */; settings = {ASSET_TAGS = (); }; };
+		93D42EF91BCA868D0094A1E8 /* NeedsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EF81BCA868D0094A1E8 /* NeedsListViewController.swift */; };
+		93D42EFB1BCA86DF0094A1E8 /* NeedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EFA1BCA86DF0094A1E8 /* NeedHandler.swift */; };
+		93D42EFD1BCA89C80094A1E8 /* NeedsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EFC1BCA89C80094A1E8 /* NeedsStore.swift */; };
+		93D42EFF1BCA89D50094A1E8 /* Where2HelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42EFE1BCA89D50094A1E8 /* Where2HelpClient.swift */; };
+		93D42F011BCA91FF0094A1E8 /* Need.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42F001BCA91FF0094A1E8 /* Need.swift */; };
+		93D42F031BCA94430094A1E8 /* NeedMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42F021BCA94430094A1E8 /* NeedMapper.swift */; };
+		93D42F051BCAAEE90094A1E8 /* NeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D42F041BCAAEE90094A1E8 /* NeedTableViewCell.swift */; };
+		93F7FD5F1BD135EE007B5E0E /* NeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7FD5E1BD135EE007B5E0E /* NeedPresenter.swift */; };
+		93F7FD611BD13F06007B5E0E /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7FD601BD13F06007B5E0E /* ColorUtils.swift */; };
 		95011317AD4409D384AA3FFF /* Pods_Where2Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A4B8E850B211D979CD3C52 /* Pods_Where2Help.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		930817161BCFEFF500E38519 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		93285CB41BCBA85B00746E5F /* NeedsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedsDetailViewController.swift; sourceTree = "<group>"; };
 		9329BAFA1BCE51E100526030 /* NeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedInteractor.swift; sourceTree = "<group>"; };
+		934FF39F1BF28639002BF5BF /* NeedDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedDetailInteractor.swift; sourceTree = "<group>"; };
+		934FF3A11BF28656002BF5BF /* NeedDetailHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedDetailHandler.swift; sourceTree = "<group>"; };
+		934FF3A71BF28E81002BF5BF /* NeedAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedAnnotation.swift; sourceTree = "<group>"; };
 		937BEBD61BD3DB16006025D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		937BEBD81BD3DDC4006025D8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		939B7EEF1BD4EBAF00447E02 /* NeedAnnotationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedAnnotationPresenter.swift; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 				93D42ECE1BCA7F890094A1E8 /* Main.storyboard */,
 				93D42ED31BCA7F890094A1E8 /* LaunchScreen.storyboard */,
 				93D42ECA1BCA7F890094A1E8 /* AppDelegate.swift */,
+				934FF3A71BF28E81002BF5BF /* NeedAnnotation.swift */,
 				930817161BCFEFF500E38519 /* Constants.swift */,
 				93F7FD641BD14051007B5E0E /* Clients */,
 				93F7FD621BD14039007B5E0E /* Controllers */,
@@ -207,10 +214,12 @@
 		93F7FD621BD14039007B5E0E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				93285CB41BCBA85B00746E5F /* NeedsDetailViewController.swift */,
+				934FF39F1BF28639002BF5BF /* NeedDetailInteractor.swift */,
+				934FF3A11BF28656002BF5BF /* NeedDetailHandler.swift */,
 				93D42EF81BCA868D0094A1E8 /* NeedsListViewController.swift */,
 				93D42EFA1BCA86DF0094A1E8 /* NeedHandler.swift */,
 				9329BAFA1BCE51E100526030 /* NeedInteractor.swift */,
-				93285CB41BCBA85B00746E5F /* NeedsDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -442,9 +451,11 @@
 				93D42EFF1BCA89D50094A1E8 /* Where2HelpClient.swift in Sources */,
 				93D42ECB1BCA7F890094A1E8 /* AppDelegate.swift in Sources */,
 				93D42EFB1BCA86DF0094A1E8 /* NeedHandler.swift in Sources */,
+				934FF3A01BF28639002BF5BF /* NeedDetailInteractor.swift in Sources */,
 				93D42F031BCA94430094A1E8 /* NeedMapper.swift in Sources */,
 				93D42EFD1BCA89C80094A1E8 /* NeedsStore.swift in Sources */,
 				930817171BCFEFF500E38519 /* Constants.swift in Sources */,
+				934FF3A81BF28E81002BF5BF /* NeedAnnotation.swift in Sources */,
 				939B7EF01BD4EBAF00447E02 /* NeedAnnotationPresenter.swift in Sources */,
 				93F7FD5F1BD135EE007B5E0E /* NeedPresenter.swift in Sources */,
 				93285CB51BCBA85B00746E5F /* NeedsDetailViewController.swift in Sources */,
@@ -452,6 +463,7 @@
 				93D42EF91BCA868D0094A1E8 /* NeedsListViewController.swift in Sources */,
 				9329BAFB1BCE51E100526030 /* NeedInteractor.swift in Sources */,
 				93D42F011BCA91FF0094A1E8 /* Need.swift in Sources */,
+				934FF3A21BF28656002BF5BF /* NeedDetailHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

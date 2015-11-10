@@ -27,7 +27,7 @@
         <!--Login View Controller-->
         <scene sceneID="VTK-JG-RA4">
             <objects>
-                <viewController title="Login View Controller" id="y5Q-Zs-v6m" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" title="Login View Controller" id="y5Q-Zs-v6m" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AXC-SG-pBZ"/>
                         <viewControllerLayoutGuide type="bottom" id="cYT-Lq-cqJ"/>
@@ -171,7 +171,7 @@
         <!--User Needs View Controller-->
         <scene sceneID="SUz-ag-3W3">
             <objects>
-                <viewController title="User Needs View Controller" id="DTE-oD-Ghs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userNeedsViewController" title="User Needs View Controller" id="DTE-oD-Ghs" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KHy-hV-MkY"/>
                         <viewControllerLayoutGuide type="bottom" id="I2T-U6-oAT"/>
@@ -189,7 +189,7 @@
         <!--Settings View Controller-->
         <scene sceneID="FVg-1C-7Oo">
             <objects>
-                <viewController title="Settings View Controller" id="78P-3P-kLD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingsViewController" title="Settings View Controller" id="78P-3P-kLD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0af-kA-d4d"/>
                         <viewControllerLayoutGuide type="bottom" id="bEG-4M-ZtB"/>
@@ -432,6 +432,9 @@
                                         <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="imInButtonPressed:" destination="W7j-5x-fr8" eventType="touchUpInside" id="rH6-3Y-w4l"/>
+                                </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-HW-nRH" userLabel="Cancel Button Container">
                                 <rect key="frame" x="20" y="384" width="560" height="105"/>
@@ -450,6 +453,9 @@
                                                 <integer key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="removeFromNeedButtonPressed:" destination="W7j-5x-fr8" eventType="touchUpInside" id="u1h-M5-dT9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jc8-az-Yns">
                                         <rect key="frame" x="0.0" y="30" width="560" height="30"/>
@@ -466,6 +472,9 @@
                                                 <integer key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareButtonPressed:" destination="W7j-5x-fr8" eventType="touchUpInside" id="tW5-zr-1zJ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danke! Bitte komm um 7:30!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sf-Tz-19U">
                                         <rect key="frame" x="20" y="0.0" width="520" height="15"/>
@@ -509,6 +518,9 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="hJl-7j-Hnd">
+                                <rect key="frame" x="324" y="419" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -576,7 +588,15 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="categoryIconImageView" destination="EgP-85-ZMy" id="sxk-kT-4fR"/>
+                        <outlet property="imInActivityView" destination="hJl-7j-Hnd" id="WYI-mt-Z6i"/>
+                        <outlet property="imInButton" destination="Qs3-5o-htc" id="Zqs-Mo-mmh"/>
                         <outlet property="mapView" destination="y0I-l0-vgE" id="oa5-fe-1We"/>
+                        <outlet property="needCategoryLabel" destination="NcV-4r-GwQ" id="ypt-8p-VeR"/>
+                        <outlet property="needCountLabel" destination="pEv-9l-TJH" id="ZW1-NO-bpI"/>
+                        <outlet property="needLocationLabel" destination="edz-kN-3V7" id="53Z-wa-0H8"/>
+                        <outlet property="needTimeLabel" destination="L2X-xf-0zr" id="eEU-7k-nte"/>
+                        <outlet property="removeFromNeedView" destination="Nx7-HW-nRH" id="w9P-d3-GUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60n-ch-afQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -586,7 +606,7 @@
         <!--Registration View Controller-->
         <scene sceneID="1sH-ZC-2nW">
             <objects>
-                <viewController title="Registration View Controller" id="8B0-2f-KMl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registrationViewController" title="Registration View Controller" id="8B0-2f-KMl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TcX-cb-V2c"/>
                         <viewControllerLayoutGuide type="bottom" id="Hs4-qX-JW7"/>

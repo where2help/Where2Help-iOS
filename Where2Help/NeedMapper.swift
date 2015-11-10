@@ -10,23 +10,29 @@ import UIKit
 import SwiftyJSON
 
 class NeedMapper {
-    class func map(json: JSON) -> [Need] {
+    class func mapAll(json: JSON) -> [Need] {
         var needs: [Need] = []
         for data in json.array! {
-            let attr = data["attributes"]
-            let need = Need(
-                category: attr["category"].string,
-                city: attr["city"].string,
-                endTime: attr["end-time"].string,
-                startTime: attr["start-time"].string,
-                location: attr["location"].string,
-                userID: attr["user-id"].int,
-
-                volunteersCount: attr["volunteers-count"].int,
-                volunteersNeeded: attr["volunteers-needed"].int)
-            needs.append(need)
+            needs.append(map(data))
         }
         return needs
+    }
+    
+    class func map(data: JSON) -> Need {
+        let attr = data["attributes"]
+        let need = Need(
+            category: attr["category"].string,
+            city: attr["city"].string,
+            endTime: attr["end-time"].string,
+            startTime: attr["start-time"].string,
+            location: attr["location"].string,
+            userID: attr["user-id"].int,
+            volunteersCount: attr["volunteers-count"].int,
+            volunteersNeeded: attr["volunteers-needed"].int,
+            lat: attr["lat"].double,
+            lng: attr["lng"].double
+        )
+        return need
     }
 
 }

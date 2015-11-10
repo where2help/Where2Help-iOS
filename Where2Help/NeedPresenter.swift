@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 class NeedPresenter {
     let need: Need!
     
@@ -54,6 +55,13 @@ class NeedPresenter {
         }
         
         return "\(loc), \(city)"
+    }
+    
+    func geo() -> CLLocation? {
+        if let lat = need.lat, lng = need.lng {
+            return CLLocation(latitude: lat, longitude: lng)
+        }
+        return nil
     }
     
     func timeDuration() -> String {

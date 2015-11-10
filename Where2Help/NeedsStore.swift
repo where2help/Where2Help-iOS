@@ -12,8 +12,15 @@ import SwiftyJSON
 class NeedsStore {
     class func needs(complete: ([Need]->())) {
         Where2HelpClient.needsList({ (json: JSON) in
-            let needs = NeedMapper.map(json["data"])
+            let needs = NeedMapper.mapAll(json["data"])
             complete(needs)
         })
+    }
+    
+    class func find(needID: Int, complete: (Need)->()) {
+        Where2HelpClient.need(needID) { (json: JSON) in
+            let need = NeedMapper.map(json["data"])
+            complete(need)
+        }
     }
 }
