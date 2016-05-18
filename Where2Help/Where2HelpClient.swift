@@ -12,7 +12,6 @@ import SwiftyJSON
 
 class Where2HelpClient {
 //    static let kBaseURL = "https://staging-where2help.herokuapp.com/api/v1"
-    
     static let kBaseURL = "http://localhost:3000/api/v1"
     
     class func needsList(complete: (JSON)->()) {
