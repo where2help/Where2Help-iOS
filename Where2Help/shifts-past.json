@@ -1,0 +1,1326 @@
+ [
+  {
+  "id": 48,
+  "title": "R2-D2, you know better than to trust a strange computer!",
+  "description": "Meh normcore gastropub meggings. You probably haven't heard of them church-key craft beer locavore kombucha. Venmo master swag cold-pressed trust fund thundercats lo-fi waistcoat. Dreamcatcher disrupt portland mixtape. Crucifix 8-bit mlkshk pour-over health.",
+  "shift_length": 2,
+  "address": "7522 Goldner Street, West Deehaven",
+  "lat": 48.1968,
+  "lng": 16.3377,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:09.888Z",
+  "updated_at": "2016-03-31T15:06:09.888Z",
+  "organization_name": "Lubowitz and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/48",
+  "shifts": [
+             {
+             "id": 139,
+             "event_id": 48,
+             "starts_at": "2016-04-04T20:44:28.885Z",
+             "ends_at": "2016-04-04T22:44:28.885Z",
+             "volunteers_needed": 7,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.892Z",
+             "updated_at": "2016-03-31T15:06:09.892Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 49,
+  "title": "You'll find I'm full of surprises!",
+  "description": "Mumblecore mixtape schlitz. Mixtape twee flexitarian chartreuse. Neutra kombucha health pinterest kinfolk tote bag next level vhs.",
+  "shift_length": 2,
+  "address": "17881 Nikita Road, Langoshview",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:09.903Z",
+  "updated_at": "2016-03-31T15:06:09.903Z",
+  "organization_name": "Lubowitz and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/49",
+  "shifts": [
+             {
+             "id": 140,
+             "event_id": 49,
+             "starts_at": "2016-04-06T08:35:12.899Z",
+             "ends_at": "2016-04-06T10:35:12.899Z",
+             "volunteers_needed": 17,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.905Z",
+             "updated_at": "2016-03-31T15:06:09.905Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 141,
+             "event_id": 49,
+             "starts_at": "2016-04-02T22:07:57.900Z",
+             "ends_at": "2016-04-03T00:07:57.900Z",
+             "volunteers_needed": 19,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.907Z",
+             "updated_at": "2016-03-31T15:06:09.907Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 142,
+             "event_id": 49,
+             "starts_at": "2016-03-31T16:08:09.900Z",
+             "ends_at": "2016-03-31T18:08:09.900Z",
+             "volunteers_needed": 1,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.910Z",
+             "updated_at": "2016-03-31T15:06:09.910Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 143,
+             "event_id": 49,
+             "starts_at": "2016-04-03T08:48:43.901Z",
+             "ends_at": "2016-04-03T10:48:43.901Z",
+             "volunteers_needed": 6,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.911Z",
+             "updated_at": "2016-03-31T15:06:09.911Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 50,
+  "title": "You know, that little droid is going to cause me a lot of trouble.",
+  "description": "Chicharrones shoreditch photo booth art party kombucha yuccie taxidermy organic. Pug 3 wolf moon pickled hoodie keytar mustache distillery skateboard. Keffiyeh kitsch everyday small batch wayfarers.",
+  "shift_length": 2,
+  "address": "5985 Rosalyn Grove, Annamarieberg",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:09.923Z",
+  "updated_at": "2016-03-31T15:06:09.923Z",
+  "organization_name": "Lubowitz and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/50",
+  "shifts": [
+             {
+             "id": 144,
+             "event_id": 50,
+             "starts_at": "2016-04-05T14:32:17.917Z",
+             "ends_at": "2016-04-05T16:32:17.917Z",
+             "volunteers_needed": 7,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.926Z",
+             "updated_at": "2016-03-31T15:06:09.926Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 145,
+             "event_id": 50,
+             "starts_at": "2016-04-03T13:03:59.920Z",
+             "ends_at": "2016-04-03T15:03:59.920Z",
+             "volunteers_needed": 3,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.929Z",
+             "updated_at": "2016-03-31T15:06:09.929Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 51,
+  "title": "Only at the end do you realize the power of the Dark Side.",
+  "description": "Knausgaard synth lumbersexual humblebrag jean shorts disrupt. Loko hashtag pickled cleanse. Stumptown ugh xoxo beard mlkshk quinoa.",
+  "shift_length": 2,
+  "address": "895 Treutel Stravenue, Port Kelsi",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:09.940Z",
+  "updated_at": "2016-03-31T15:06:09.940Z",
+  "organization_name": "Lubowitz and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/51",
+  "shifts": [
+             {
+             "id": 146,
+             "event_id": 51,
+             "starts_at": "2016-04-05T10:01:40.934Z",
+             "ends_at": "2016-04-05T12:01:40.934Z",
+             "volunteers_needed": 3,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.943Z",
+             "updated_at": "2016-03-31T15:06:09.943Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 147,
+             "event_id": 51,
+             "starts_at": "2016-04-03T04:12:00.935Z",
+             "ends_at": "2016-04-03T06:12:00.935Z",
+             "volunteers_needed": 20,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.945Z",
+             "updated_at": "2016-03-31T15:06:09.945Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 148,
+             "event_id": 51,
+             "starts_at": "2016-04-06T12:15:08.936Z",
+             "ends_at": "2016-04-06T14:15:08.936Z",
+             "volunteers_needed": 1,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.946Z",
+             "updated_at": "2016-03-31T15:06:09.946Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 149,
+             "event_id": 51,
+             "starts_at": "2016-03-31T22:54:49.936Z",
+             "ends_at": "2016-04-01T00:54:49.936Z",
+             "volunteers_needed": 1,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.948Z",
+             "updated_at": "2016-03-31T15:06:09.948Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 150,
+             "event_id": 51,
+             "starts_at": "2016-04-05T19:15:15.937Z",
+             "ends_at": "2016-04-05T21:15:15.937Z",
+             "volunteers_needed": 8,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.950Z",
+             "updated_at": "2016-03-31T15:06:09.950Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 52,
+  "title": "Who's the more foolish; the fool, or the fool who follows him?",
+  "description": "Street blue bottle plaid vice kinfolk keytar. Five dollar toast tofu ethical carry viral 8-bit slow-carb tattooed. Marfa heirloom iphone street carry twee.",
+  "shift_length": 2,
+  "address": "7301 Stamm Square, New Marilieside",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:09.958Z",
+  "updated_at": "2016-03-31T15:06:09.958Z",
+  "organization_name": "Lubowitz and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/52",
+  "shifts": [
+             {
+             "id": 151,
+             "event_id": 52,
+             "starts_at": "2016-04-05T03:02:02.954Z",
+             "ends_at": "2016-04-05T05:02:02.954Z",
+             "volunteers_needed": 18,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.961Z",
+             "updated_at": "2016-03-31T15:06:09.961Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 152,
+             "event_id": 52,
+             "starts_at": "2016-04-03T23:38:54.955Z",
+             "ends_at": "2016-04-04T01:38:54.955Z",
+             "volunteers_needed": 2,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.962Z",
+             "updated_at": "2016-03-31T15:06:09.962Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 153,
+             "event_id": 52,
+             "starts_at": "2016-04-02T19:25:27.956Z",
+             "ends_at": "2016-04-02T21:25:27.956Z",
+             "volunteers_needed": 7,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.964Z",
+             "updated_at": "2016-03-31T15:06:09.964Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 53,
+  "title": "Never tell me the odds!",
+  "description": "Xoxo before they sold out you probably haven't heard of them authentic. Sustainable narwhal messenger bag cold-pressed. Single-origin coffee quinoa lomo chia blue bottle cardigan actually. Fixie iphone pabst umami leggings.",
+  "shift_length": 2,
+  "address": "707 Hudson Lodge, West Shaunton",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:09.972Z",
+  "updated_at": "2016-03-31T15:06:09.972Z",
+  "organization_name": "Fay, Kulas and Satterfield",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/53",
+  "shifts": [
+             {
+             "id": 154,
+             "event_id": 53,
+             "starts_at": "2016-04-04T19:04:14.968Z",
+             "ends_at": "2016-04-04T21:04:14.968Z",
+             "volunteers_needed": 1,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.974Z",
+             "updated_at": "2016-03-31T15:06:09.974Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 155,
+             "event_id": 53,
+             "starts_at": "2016-04-02T12:51:02.969Z",
+             "ends_at": "2016-04-02T14:51:02.969Z",
+             "volunteers_needed": 17,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.975Z",
+             "updated_at": "2016-03-31T15:06:09.975Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 156,
+             "event_id": 53,
+             "starts_at": "2016-04-03T06:28:03.970Z",
+             "ends_at": "2016-04-03T08:28:03.970Z",
+             "volunteers_needed": 9,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.977Z",
+             "updated_at": "2016-03-31T15:06:09.977Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 157,
+             "event_id": 53,
+             "starts_at": "2016-04-07T03:22:40.970Z",
+             "ends_at": "2016-04-07T05:22:40.970Z",
+             "volunteers_needed": 3,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.979Z",
+             "updated_at": "2016-03-31T15:06:09.979Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 54,
+  "title": "R2-D2, you know better than to trust a strange computer!",
+  "description": "Selvage tattooed bitters try-hard ugh marfa. Pinterest shoreditch trust fund pabst squid. Selvage authentic fashion axe five dollar toast aesthetic shabby chic. Irony twee kogi truffaut.",
+  "shift_length": 2,
+  "address": "71894 Hal Passage, East Jamieberg",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:09.987Z",
+  "updated_at": "2016-03-31T15:06:09.987Z",
+  "organization_name": "Fay, Kulas and Satterfield",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/54",
+  "shifts": [
+             {
+             "id": 158,
+             "event_id": 54,
+             "starts_at": "2016-04-03T18:01:05.983Z",
+             "ends_at": "2016-04-03T20:01:05.983Z",
+             "volunteers_needed": 16,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.989Z",
+             "updated_at": "2016-03-31T15:06:09.989Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 159,
+             "event_id": 54,
+             "starts_at": "2016-03-31T19:47:36.984Z",
+             "ends_at": "2016-03-31T21:47:36.984Z",
+             "volunteers_needed": 9,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.990Z",
+             "updated_at": "2016-03-31T15:06:09.990Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 160,
+             "event_id": 54,
+             "starts_at": "2016-04-05T02:37:32.984Z",
+             "ends_at": "2016-04-05T04:37:32.984Z",
+             "volunteers_needed": 12,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.993Z",
+             "updated_at": "2016-03-31T15:06:09.993Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 161,
+             "event_id": 54,
+             "starts_at": "2016-04-02T11:46:46.985Z",
+             "ends_at": "2016-04-02T13:46:46.985Z",
+             "volunteers_needed": 3,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:09.994Z",
+             "updated_at": "2016-03-31T15:06:09.994Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 55,
+  "title": "Do. Or do not. There is no try.",
+  "description": "Kombucha wolf sustainable. Ugh etsy shoreditch heirloom put a bird on it portland pickled viral. Cray portland shabby chic jean shorts. Helvetica kickstarter kombucha cleanse hammock.",
+  "shift_length": 2,
+  "address": "140 Jensen Causeway, Nicolasfurt",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.002Z",
+  "updated_at": "2016-03-31T15:06:10.002Z",
+  "organization_name": "Fay, Kulas and Satterfield",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/55",
+  "shifts": [
+             {
+             "id": 162,
+             "event_id": 55,
+             "starts_at": "2016-04-07T12:23:51.998Z",
+             "ends_at": "2016-04-07T14:23:51.998Z",
+             "volunteers_needed": 13,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.003Z",
+             "updated_at": "2016-03-31T15:06:10.003Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 163,
+             "event_id": 55,
+             "starts_at": "2016-04-04T11:48:47.999Z",
+             "ends_at": "2016-04-04T13:48:47.999Z",
+             "volunteers_needed": 9,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.005Z",
+             "updated_at": "2016-03-31T15:06:10.005Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 164,
+             "event_id": 55,
+             "starts_at": "2016-04-07T02:28:26.000Z",
+             "ends_at": "2016-04-07T04:28:26.000Z",
+             "volunteers_needed": 4,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.007Z",
+             "updated_at": "2016-03-31T15:06:10.007Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 56,
+  "title": "Never tell me the odds!",
+  "description": "Health hashtag park gentrify organic. Wes anderson pop-up yuccie readymade keffiyeh. Quinoa ethical fap migas gastropub flannel health. Bushwick crucifix pork belly selfies cred bicycle rights put a bird on it mlkshk.",
+  "shift_length": 2,
+  "address": "8379 Breitenberg Village, Karelleland",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.013Z",
+  "updated_at": "2016-03-31T15:06:10.013Z",
+  "organization_name": "Fay, Kulas and Satterfield",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/56",
+  "shifts": [
+             {
+             "id": 165,
+             "event_id": 56,
+             "starts_at": "2016-04-01T15:55:03.010Z",
+             "ends_at": "2016-04-01T17:55:03.010Z",
+             "volunteers_needed": 20,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.014Z",
+             "updated_at": "2016-03-31T15:06:10.014Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 57,
+  "title": "A Jedi uses the Force for knowledge and defense, never for attack.",
+  "description": "Roof trust fund pork belly next level. Mumblecore cold-pressed photo booth chambray. Mixtape pickled trust fund tilde keytar +1 leggings flexitarian.",
+  "shift_length": 2,
+  "address": "75884 Melody Manor, Namestad",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.021Z",
+  "updated_at": "2016-03-31T15:06:10.021Z",
+  "organization_name": "Fay, Kulas and Satterfield",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/57",
+  "shifts": [
+             {
+             "id": 166,
+             "event_id": 57,
+             "starts_at": "2016-04-02T02:26:57.018Z",
+             "ends_at": "2016-04-02T04:26:57.018Z",
+             "volunteers_needed": 14,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.022Z",
+             "updated_at": "2016-03-31T15:06:10.022Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 167,
+             "event_id": 57,
+             "starts_at": "2016-04-02T03:05:13.019Z",
+             "ends_at": "2016-04-02T05:05:13.019Z",
+             "volunteers_needed": 9,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.025Z",
+             "updated_at": "2016-03-31T15:06:10.025Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 58,
+  "title": "Well, you said you wanted to be around when I made a mistake.",
+  "description": "Poutine schlitz jean shorts. Raw denim actually schlitz trust fund tousled cred. Polaroid austin celiac vinegar carry.",
+  "shift_length": 2,
+  "address": "537 O'Connell Island, Magdalentown",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.034Z",
+  "updated_at": "2016-03-31T15:06:10.034Z",
+  "organization_name": "Morissette and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/58",
+  "shifts": [
+             {
+             "id": 168,
+             "event_id": 58,
+             "starts_at": "2016-03-31T19:35:19.029Z",
+             "ends_at": "2016-03-31T21:35:19.029Z",
+             "volunteers_needed": 11,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.036Z",
+             "updated_at": "2016-03-31T15:06:10.036Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 169,
+             "event_id": 58,
+             "starts_at": "2016-03-31T17:29:31.031Z",
+             "ends_at": "2016-03-31T19:29:31.031Z",
+             "volunteers_needed": 16,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.038Z",
+             "updated_at": "2016-03-31T15:06:10.038Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 170,
+             "event_id": 58,
+             "starts_at": "2016-04-01T01:22:18.031Z",
+             "ends_at": "2016-04-01T03:22:18.031Z",
+             "volunteers_needed": 13,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.040Z",
+             "updated_at": "2016-03-31T15:06:10.040Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 171,
+             "event_id": 58,
+             "starts_at": "2016-04-04T23:21:33.032Z",
+             "ends_at": "2016-04-05T01:21:33.032Z",
+             "volunteers_needed": 3,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.042Z",
+             "updated_at": "2016-03-31T15:06:10.042Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 172,
+             "event_id": 58,
+             "starts_at": "2016-04-03T05:13:55.032Z",
+             "ends_at": "2016-04-03T07:13:55.032Z",
+             "volunteers_needed": 20,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.043Z",
+             "updated_at": "2016-03-31T15:06:10.043Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 59,
+  "title": "You'll find I'm full of surprises!",
+  "description": "Helvetica irony schlitz authentic truffaut pabst. Pour-over vice park selfies paleo cray semiotics portland. Normcore skateboard pickled 3 wolf moon vegan.",
+  "shift_length": 2,
+  "address": "54974 Khalil Crest, South Freedachester",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.060Z",
+  "updated_at": "2016-03-31T15:06:10.060Z",
+  "organization_name": "Morissette and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/59",
+  "shifts": [
+             {
+             "id": 173,
+             "event_id": 59,
+             "starts_at": "2016-04-05T12:43:23.050Z",
+             "ends_at": "2016-04-05T14:43:23.050Z",
+             "volunteers_needed": 14,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.062Z",
+             "updated_at": "2016-03-31T15:06:10.062Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 174,
+             "event_id": 59,
+             "starts_at": "2016-03-31T23:22:10.055Z",
+             "ends_at": "2016-04-01T01:22:10.055Z",
+             "volunteers_needed": 8,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.066Z",
+             "updated_at": "2016-03-31T15:06:10.066Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 175,
+             "event_id": 59,
+             "starts_at": "2016-04-01T05:35:46.056Z",
+             "ends_at": "2016-04-01T07:35:46.056Z",
+             "volunteers_needed": 12,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.068Z",
+             "updated_at": "2016-03-31T15:06:10.068Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 176,
+             "event_id": 59,
+             "starts_at": "2016-04-02T08:06:37.057Z",
+             "ends_at": "2016-04-02T10:06:37.057Z",
+             "volunteers_needed": 4,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.069Z",
+             "updated_at": "2016-03-31T15:06:10.069Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 177,
+             "event_id": 59,
+             "starts_at": "2016-04-03T04:06:02.058Z",
+             "ends_at": "2016-04-03T06:06:02.058Z",
+             "volunteers_needed": 6,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.071Z",
+             "updated_at": "2016-03-31T15:06:10.071Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 60,
+  "title": "You will never find a more wretched hive of scum and villainy. We must be cautious.",
+  "description": "Direct trade locavore thundercats. Pop-up lo-fi meh shoreditch flannel venmo chicharrones. Everyday banjo fashion axe cronut kale chips raw denim pickled. Chia offal hella farm-to-table.",
+  "shift_length": 2,
+  "address": "855 Schmeler Mission, East Arthur",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.078Z",
+  "updated_at": "2016-03-31T15:06:10.078Z",
+  "organization_name": "Morissette and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/60",
+  "shifts": [
+             {
+             "id": 178,
+             "event_id": 60,
+             "starts_at": "2016-04-06T19:32:49.075Z",
+             "ends_at": "2016-04-06T21:32:49.075Z",
+             "volunteers_needed": 20,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.081Z",
+             "updated_at": "2016-03-31T15:06:10.081Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 179,
+             "event_id": 60,
+             "starts_at": "2016-03-31T21:29:27.076Z",
+             "ends_at": "2016-03-31T23:29:27.076Z",
+             "volunteers_needed": 3,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.083Z",
+             "updated_at": "2016-03-31T15:06:10.083Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 61,
+  "title": "Do. Or do not. There is no try.",
+  "description": "Diy pickled butcher brooklyn kickstarter schlitz. Normcore next level loko shoreditch butcher hella. Scenester paleo xoxo vegan.",
+  "shift_length": 2,
+  "address": "47028 Lina Camp, North Scotburgh",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.090Z",
+  "updated_at": "2016-03-31T15:06:10.090Z",
+  "organization_name": "Morissette and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/61",
+  "shifts": [
+             {
+             "id": 180,
+             "event_id": 61,
+             "starts_at": "2016-04-02T17:02:55.088Z",
+             "ends_at": "2016-04-02T19:02:55.088Z",
+             "volunteers_needed": 2,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.093Z",
+             "updated_at": "2016-03-31T15:06:10.093Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 62,
+  "title": "Who's the more foolish; the fool, or the fool who follows him?",
+  "description": "Pickled quinoa taxidermy wayfarers forage loko cold-pressed etsy. Literally you probably haven't heard of them sartorial everyday street semiotics green juice etsy. Hammock swag normcore selfies meditation cray. Knausgaard mlkshk 3 wolf moon readymade.",
+  "shift_length": 2,
+  "address": "492 Elfrieda Crossroad, North Cecil",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.107Z",
+  "updated_at": "2016-03-31T15:06:10.107Z",
+  "organization_name": "Morissette and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/62",
+  "shifts": [
+             {
+             "id": 181,
+             "event_id": 62,
+             "starts_at": "2016-03-31T22:54:54.100Z",
+             "ends_at": "2016-04-01T00:54:54.100Z",
+             "volunteers_needed": 2,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.109Z",
+             "updated_at": "2016-03-31T15:06:10.109Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 182,
+             "event_id": 62,
+             "starts_at": "2016-04-02T17:17:35.102Z",
+             "ends_at": "2016-04-02T19:17:35.102Z",
+             "volunteers_needed": 9,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.112Z",
+             "updated_at": "2016-03-31T15:06:10.112Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 183,
+             "event_id": 62,
+             "starts_at": "2016-04-03T16:00:37.104Z",
+             "ends_at": "2016-04-03T18:00:37.104Z",
+             "volunteers_needed": 16,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.114Z",
+             "updated_at": "2016-03-31T15:06:10.114Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 63,
+  "title": "Never tell me the odds!",
+  "description": "Skateboard fap cray microdosing synth yuccie chartreuse vinyl. Letterpress echo franzen. Cliche taxidermy cronut. Loko knausgaard goth pickled. Pbr&b actually bicycle rights skateboard trust fund cold-pressed.",
+  "shift_length": 2,
+  "address": "118 Jacques Lake, Batztown",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.123Z",
+  "updated_at": "2016-03-31T15:06:10.123Z",
+  "organization_name": "Ryan and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/63",
+  "shifts": [
+             {
+             "id": 184,
+             "event_id": 63,
+             "starts_at": "2016-04-05T21:05:20.118Z",
+             "ends_at": "2016-04-05T23:05:20.118Z",
+             "volunteers_needed": 15,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.125Z",
+             "updated_at": "2016-03-31T15:06:10.125Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 185,
+             "event_id": 63,
+             "starts_at": "2016-04-04T01:46:24.120Z",
+             "ends_at": "2016-04-04T03:46:24.120Z",
+             "volunteers_needed": 18,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.127Z",
+             "updated_at": "2016-03-31T15:06:10.127Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 186,
+             "event_id": 63,
+             "starts_at": "2016-04-06T20:06:19.120Z",
+             "ends_at": "2016-04-06T22:06:19.120Z",
+             "volunteers_needed": 8,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.129Z",
+             "updated_at": "2016-03-31T15:06:10.129Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 187,
+             "event_id": 63,
+             "starts_at": "2016-04-05T19:46:12.121Z",
+             "ends_at": "2016-04-05T21:46:12.121Z",
+             "volunteers_needed": 20,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.131Z",
+             "updated_at": "2016-03-31T15:06:10.131Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 64,
+  "title": "Aren't you a little short for a Stormtrooper?",
+  "description": "Butcher park vice gastropub chia. Green juice echo actually. Yolo whatever thundercats +1 cray migas fap dreamcatcher. Ugh semiotics craft beer seitan etsy gluten-free keffiyeh.",
+  "shift_length": 2,
+  "address": "14539 Antwan Center, Sallyview",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.142Z",
+  "updated_at": "2016-03-31T15:06:10.142Z",
+  "organization_name": "Ryan and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/64",
+  "shifts": [
+             {
+             "id": 188,
+             "event_id": 64,
+             "starts_at": "2016-04-01T12:53:31.136Z",
+             "ends_at": "2016-04-01T14:53:31.136Z",
+             "volunteers_needed": 3,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.144Z",
+             "updated_at": "2016-03-31T15:06:10.144Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 189,
+             "event_id": 64,
+             "starts_at": "2016-04-03T20:58:36.138Z",
+             "ends_at": "2016-04-03T22:58:36.138Z",
+             "volunteers_needed": 20,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.146Z",
+             "updated_at": "2016-03-31T15:06:10.146Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 190,
+             "event_id": 64,
+             "starts_at": "2016-04-01T06:23:06.138Z",
+             "ends_at": "2016-04-01T08:23:06.138Z",
+             "volunteers_needed": 2,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.147Z",
+             "updated_at": "2016-03-31T15:06:10.147Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 191,
+             "event_id": 64,
+             "starts_at": "2016-04-01T12:01:23.139Z",
+             "ends_at": "2016-04-01T14:01:23.139Z",
+             "volunteers_needed": 10,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.149Z",
+             "updated_at": "2016-03-31T15:06:10.149Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 192,
+             "event_id": 64,
+             "starts_at": "2016-04-07T07:11:05.140Z",
+             "ends_at": "2016-04-07T09:11:05.140Z",
+             "volunteers_needed": 19,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.151Z",
+             "updated_at": "2016-03-31T15:06:10.151Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 65,
+  "title": "Never tell me the odds!",
+  "description": "Ramps blog kickstarter brooklyn. Literally plaid umami dreamcatcher street. Kickstarter ethical health. Iphone intelligentsia pug ugh. Knausgaard brunch occupy.",
+  "shift_length": 2,
+  "address": "7340 Keeling Lakes, Zechariahville",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.159Z",
+  "updated_at": "2016-03-31T15:06:10.159Z",
+  "organization_name": "Ryan and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/65",
+  "shifts": [
+             {
+             "id": 193,
+             "event_id": 65,
+             "starts_at": "2016-04-06T05:32:41.155Z",
+             "ends_at": "2016-04-06T07:32:41.155Z",
+             "volunteers_needed": 10,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.161Z",
+             "updated_at": "2016-03-31T15:06:10.161Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 194,
+             "event_id": 65,
+             "starts_at": "2016-04-07T06:07:10.156Z",
+             "ends_at": "2016-04-07T08:07:10.156Z",
+             "volunteers_needed": 7,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.163Z",
+             "updated_at": "2016-03-31T15:06:10.163Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 195,
+             "event_id": 65,
+             "starts_at": "2016-04-02T20:57:55.156Z",
+             "ends_at": "2016-04-02T22:57:55.156Z",
+             "volunteers_needed": 18,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.164Z",
+             "updated_at": "2016-03-31T15:06:10.164Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 196,
+             "event_id": 65,
+             "starts_at": "2016-04-07T03:11:02.157Z",
+             "ends_at": "2016-04-07T05:11:02.157Z",
+             "volunteers_needed": 4,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.167Z",
+             "updated_at": "2016-03-31T15:06:10.167Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 197,
+             "event_id": 65,
+             "starts_at": "2016-04-05T18:15:51.157Z",
+             "ends_at": "2016-04-05T20:15:51.157Z",
+             "volunteers_needed": 11,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.169Z",
+             "updated_at": "2016-03-31T15:06:10.169Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 66,
+  "title": "A Jedi uses the Force for knowledge and defense, never for attack.",
+  "description": "Health pork belly kogi kinfolk everyday sustainable. Artisan blog craft beer cold-pressed. Meditation fixie ugh aesthetic dreamcatcher. Fingerstache cardigan jean shorts keytar.",
+  "shift_length": 2,
+  "address": "874 Osinski Trace, Annalisefort",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.176Z",
+  "updated_at": "2016-03-31T15:06:10.176Z",
+  "organization_name": "Ryan and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/66",
+  "shifts": [
+             {
+             "id": 198,
+             "event_id": 66,
+             "starts_at": "2016-04-07T05:13:36.173Z",
+             "ends_at": "2016-04-07T07:13:36.173Z",
+             "volunteers_needed": 4,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.178Z",
+             "updated_at": "2016-03-31T15:06:10.178Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 199,
+             "event_id": 66,
+             "starts_at": "2016-04-05T08:20:28.174Z",
+             "ends_at": "2016-04-05T10:20:28.174Z",
+             "volunteers_needed": 17,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.180Z",
+             "updated_at": "2016-03-31T15:06:10.180Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 67,
+  "title": "You will never find a more wretched hive of scum and villainy. We must be cautious.",
+  "description": "Vinyl organic pickled synth blue bottle beard +1. Semiotics disrupt dreamcatcher banh mi butcher mumblecore. Banh mi kombucha leggings. Meditation scenester skateboard brunch small batch messenger bag shabby chic. Pabst biodiesel shabby chic photo booth art party wes anderson lo-fi.",
+  "shift_length": 2,
+  "address": "134 Hillary Brook, Lake Arielle",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.191Z",
+  "updated_at": "2016-03-31T15:06:10.191Z",
+  "organization_name": "Ryan and Sons",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/67",
+  "shifts": [
+             {
+             "id": 200,
+             "event_id": 67,
+             "starts_at": "2016-04-03T09:47:35.187Z",
+             "ends_at": "2016-04-03T11:47:35.187Z",
+             "volunteers_needed": 7,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.192Z",
+             "updated_at": "2016-03-31T15:06:10.192Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 201,
+             "event_id": 67,
+             "starts_at": "2016-04-07T08:33:35.188Z",
+             "ends_at": "2016-04-07T10:33:35.188Z",
+             "volunteers_needed": 4,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.194Z",
+             "updated_at": "2016-03-31T15:06:10.194Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 202,
+             "event_id": 67,
+             "starts_at": "2016-04-02T21:14:02.188Z",
+             "ends_at": "2016-04-02T23:14:02.188Z",
+             "volunteers_needed": 6,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.196Z",
+             "updated_at": "2016-03-31T15:06:10.196Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 203,
+             "event_id": 67,
+             "starts_at": "2016-04-02T10:57:56.189Z",
+             "ends_at": "2016-04-02T12:57:56.189Z",
+             "volunteers_needed": 6,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.198Z",
+             "updated_at": "2016-03-31T15:06:10.198Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 68,
+  "title": "Well, you said you wanted to be around when I made a mistake.",
+  "description": "Cardigan blue bottle disrupt cleanse kinfolk pork belly asymmetrical. Xoxo fanny pack meggings fingerstache kickstarter humblebrag. Disrupt drinking iphone. Distillery green juice gastropub marfa typewriter direct trade. Disrupt vegan lomo post-ironic twee.",
+  "shift_length": 2,
+  "address": "8549 Garry Mews, Lake Tillmanmouth",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.206Z",
+  "updated_at": "2016-03-31T15:06:10.206Z",
+  "organization_name": "Rutherford LLC",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/68",
+  "shifts": [
+             {
+             "id": 204,
+             "event_id": 68,
+             "starts_at": "2016-04-01T05:11:53.202Z",
+             "ends_at": "2016-04-01T07:11:53.202Z",
+             "volunteers_needed": 19,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.208Z",
+             "updated_at": "2016-03-31T15:06:10.208Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 205,
+             "event_id": 68,
+             "starts_at": "2016-04-04T16:38:28.203Z",
+             "ends_at": "2016-04-04T18:38:28.203Z",
+             "volunteers_needed": 13,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.210Z",
+             "updated_at": "2016-03-31T15:06:10.210Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 206,
+             "event_id": 68,
+             "starts_at": "2016-04-03T00:29:19.204Z",
+             "ends_at": "2016-04-03T02:29:19.204Z",
+             "volunteers_needed": 10,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.212Z",
+             "updated_at": "2016-03-31T15:06:10.212Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 207,
+             "event_id": 68,
+             "starts_at": "2016-04-07T05:33:55.204Z",
+             "ends_at": "2016-04-07T07:33:55.204Z",
+             "volunteers_needed": 9,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.214Z",
+             "updated_at": "2016-03-31T15:06:10.214Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 69,
+  "title": "You know, that little droid is going to cause me a lot of trouble.",
+  "description": "Neutra occupy quinoa shoreditch typewriter. Authentic direct trade artisan selfies cornhole franzen butcher. Cronut vice green juice skateboard. Meditation vice master.",
+  "shift_length": 2,
+  "address": "4151 Hoppe Motorway, Lake Deventon",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.220Z",
+  "updated_at": "2016-03-31T15:06:10.220Z",
+  "organization_name": "Rutherford LLC",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/69",
+  "shifts": [
+             {
+             "id": 208,
+             "event_id": 69,
+             "starts_at": "2016-04-06T01:24:29.218Z",
+             "ends_at": "2016-04-06T03:24:29.218Z",
+             "volunteers_needed": 19,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.222Z",
+             "updated_at": "2016-03-31T15:06:10.222Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 209,
+             "event_id": 69,
+             "starts_at": "2016-04-01T04:43:32.219Z",
+             "ends_at": "2016-04-01T06:43:32.219Z",
+             "volunteers_needed": 1,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.224Z",
+             "updated_at": "2016-03-31T15:06:10.224Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 70,
+  "title": "You'll find I'm full of surprises!",
+  "description": "Venmo taxidermy plaid distillery lomo fap five dollar toast. Raw denim wolf cold-pressed. Dreamcatcher wes anderson wayfarers green juice try-hard pbr&b raw denim vhs.",
+  "shift_length": 2,
+  "address": "9402 Roob Mountains, New Kory",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.232Z",
+  "updated_at": "2016-03-31T15:06:10.232Z",
+  "organization_name": "Rutherford LLC",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/70",
+  "shifts": [
+             {
+             "id": 210,
+             "event_id": 70,
+             "starts_at": "2016-04-01T21:09:38.228Z",
+             "ends_at": "2016-04-01T23:09:38.228Z",
+             "volunteers_needed": 9,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.234Z",
+             "updated_at": "2016-03-31T15:06:10.234Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 211,
+             "event_id": 70,
+             "starts_at": "2016-04-06T18:04:03.229Z",
+             "ends_at": "2016-04-06T20:04:03.229Z",
+             "volunteers_needed": 10,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.236Z",
+             "updated_at": "2016-03-31T15:06:10.236Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 212,
+             "event_id": 70,
+             "starts_at": "2016-04-03T18:15:35.229Z",
+             "ends_at": "2016-04-03T20:15:35.229Z",
+             "volunteers_needed": 6,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.238Z",
+             "updated_at": "2016-03-31T15:06:10.238Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 213,
+             "event_id": 70,
+             "starts_at": "2016-04-03T22:22:43.230Z",
+             "ends_at": "2016-04-04T00:22:43.230Z",
+             "volunteers_needed": 6,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.239Z",
+             "updated_at": "2016-03-31T15:06:10.239Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 214,
+             "event_id": 70,
+             "starts_at": "2016-04-04T21:31:31.230Z",
+             "ends_at": "2016-04-04T23:31:31.230Z",
+             "volunteers_needed": 18,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.241Z",
+             "updated_at": "2016-03-31T15:06:10.241Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 71,
+  "title": "Shut him up or shut him down.",
+  "description": "Vhs portland helvetica. Irony iphone distillery waistcoat yolo brooklyn 90's. Banjo flexitarian wolf mixtape.",
+  "shift_length": 2,
+  "address": "340 Russel Burg, Lake Calista",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.252Z",
+  "updated_at": "2016-03-31T15:06:10.252Z",
+  "organization_name": "Rutherford LLC",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/71",
+  "shifts": [
+             {
+             "id": 215,
+             "event_id": 71,
+             "starts_at": "2016-04-05T02:35:07.246Z",
+             "ends_at": "2016-04-05T04:35:07.246Z",
+             "volunteers_needed": 18,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.254Z",
+             "updated_at": "2016-03-31T15:06:10.254Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 216,
+             "event_id": 71,
+             "starts_at": "2016-04-04T05:50:41.248Z",
+             "ends_at": "2016-04-04T07:50:41.248Z",
+             "volunteers_needed": 7,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.255Z",
+             "updated_at": "2016-03-31T15:06:10.255Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 217,
+             "event_id": 71,
+             "starts_at": "2016-04-02T00:36:18.249Z",
+             "ends_at": "2016-04-02T02:36:18.249Z",
+             "volunteers_needed": 3,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.257Z",
+             "updated_at": "2016-03-31T15:06:10.257Z",
+             "current_user_assigned": false
+             }
+             ]
+  },
+  {
+  "id": 72,
+  "title": "Who's the more foolish; the fool, or the fool who follows him?",
+  "description": "Bicycle rights migas whatever bespoke squid asymmetrical kinfolk. Blog echo schlitz pork belly crucifix jean shorts. Banh mi raw denim vinyl health lo-fi. Health chicharrones cronut flexitarian tote bag asymmetrical. Organic lumbersexual thundercats mumblecore.",
+  "shift_length": 2,
+  "address": "1192 Mills Landing, Vernachester",
+  "lat": null,
+  "lng": null,
+  "state": "pending",
+  "created_at": "2016-03-31T15:06:10.266Z",
+  "updated_at": "2016-03-31T15:06:10.266Z",
+  "organization_name": "Rutherford LLC",
+  "url": "http://staging-where2help.herokuapp.com/api/v1/events/72",
+  "shifts": [
+             {
+             "id": 218,
+             "event_id": 72,
+             "starts_at": "2016-04-04T18:30:52.261Z",
+             "ends_at": "2016-04-04T20:30:52.261Z",
+             "volunteers_needed": 17,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.268Z",
+             "updated_at": "2016-03-31T15:06:10.268Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 219,
+             "event_id": 72,
+             "starts_at": "2016-04-06T18:57:33.262Z",
+             "ends_at": "2016-04-06T20:57:33.262Z",
+             "volunteers_needed": 13,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.269Z",
+             "updated_at": "2016-03-31T15:06:10.269Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 220,
+             "event_id": 72,
+             "starts_at": "2016-04-01T05:02:42.263Z",
+             "ends_at": "2016-04-01T07:02:42.263Z",
+             "volunteers_needed": 10,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.271Z",
+             "updated_at": "2016-03-31T15:06:10.271Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 221,
+             "event_id": 72,
+             "starts_at": "2016-04-07T03:18:05.263Z",
+             "ends_at": "2016-04-07T05:18:05.263Z",
+             "volunteers_needed": 8,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.273Z",
+             "updated_at": "2016-03-31T15:06:10.273Z",
+             "current_user_assigned": false
+             },
+             {
+             "id": 222,
+             "event_id": 72,
+             "starts_at": "2016-04-05T04:12:10.264Z",
+             "ends_at": "2016-04-05T06:12:10.264Z",
+             "volunteers_needed": 13,
+             "volunteers_count": 0,
+             "created_at": "2016-03-31T15:06:10.274Z",
+             "updated_at": "2016-03-31T15:06:10.274Z",
+             "current_user_assigned": false
+             }
+             ]
+  }
+  ]

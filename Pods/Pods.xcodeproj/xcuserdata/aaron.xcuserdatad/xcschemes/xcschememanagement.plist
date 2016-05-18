@@ -9,12 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSONJoy-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>OMGHTTPURLRQ.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Where2Help.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyJSON.xcscheme</key>
+		<key>PromiseKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1A20C75B4207F7B7BCEB83B2514CF803</key>
+		<key>190ACD3A51BC90B85EADB13E9CDD207B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FB6F45364C932E7F5445012A67945D3</key>
+		<key>53139F57197BF73B5CDC6C29F3FC6F46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>54841E4BFC1D9AF272ECC6133930837C</key>
+		<key>74D746023527F3EEA56BFD71F01F77C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8842E99CFD7F0BBDB77A49F7F8DCD26</key>
 		<dict>
 			<key>primary</key>
 			<true/>

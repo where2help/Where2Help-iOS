@@ -2,8 +2,8 @@
 //  Where2HelpUITests.swift
 //  Where2HelpUITests
 //
-//  Created by Aaron Cruz on 10/11/15.
-//  Copyright © 2015 Aaron Cruz. All rights reserved.
+//  Created by Aaron Cruz on 3/24/16.
+//  Copyright © 2016 Where2Help. All rights reserved.
 //
 
 import XCTest

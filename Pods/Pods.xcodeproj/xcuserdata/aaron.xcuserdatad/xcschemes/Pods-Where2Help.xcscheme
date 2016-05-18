@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '06DB8DA40A623CD3E2CE833D'
+               BlueprintIdentifier = 'A244DB5C83ACF514A39D4B07'
                BlueprintName = 'Pods-Where2Help'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Where2Help.framework'>
