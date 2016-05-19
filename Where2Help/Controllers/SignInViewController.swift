@@ -8,6 +8,26 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, UITextFieldDelegate {
+  @IBOutlet weak var emailTextField: UITextField!
+  @IBOutlet weak var passwordTextField: UITextField!
 
+  func textFieldShouldReturn(textField: UITextField) -> Bool {
+    if textField == emailTextField {
+      passwordTextField.becomeFirstResponder()
+    } else {
+      signIn()
+    }
+    return true
+  }
+
+  @IBAction func signInButtonTapped(sender: UIButton) {
+    signIn()
+  }
+
+  func signIn() {
+    let emailAddress = emailTextField.text
+    let password = passwordTextField.text
+    print("Signing in with email: \(emailAddress) password: \(password)")
+  }
 }
