@@ -42,6 +42,9 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
       print(response.result)   // result of response serialization
 
       if let JSON = response.result.value {
+        if response.result.isSuccess {
+          self.performSegueWithIdentifier("SignInSuccessful", sender: self)
+        }
         print("JSON: \(JSON)")
       }
     }
