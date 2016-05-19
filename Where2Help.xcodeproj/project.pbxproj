@@ -40,6 +40,7 @@
 		93F55B2F1CB93C1700E7EF4B /* shifts-all.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F55B2C1CB93C1700E7EF4B /* shifts-all.json */; };
 		93F55B301CB93C1700E7EF4B /* shifts-current.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F55B2D1CB93C1700E7EF4B /* shifts-current.json */; };
 		93F55B311CB93C1700E7EF4B /* shifts-past.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F55B2E1CB93C1700E7EF4B /* shifts-past.json */; };
+		F89843B91CEDFD2E009B154C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89843B81CEDFD2E009B154C /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		93F55B2D1CB93C1700E7EF4B /* shifts-current.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "shifts-current.json"; sourceTree = "<group>"; };
 		93F55B2E1CB93C1700E7EF4B /* shifts-past.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "shifts-past.json"; sourceTree = "<group>"; };
 		E012CEC14CDADDB09E56A834 /* Pods-Where2Help.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where2Help.release.xcconfig"; path = "Pods/Target Support Files/Pods-Where2Help/Pods-Where2Help.release.xcconfig"; sourceTree = "<group>"; };
+		F89843B81CEDFD2E009B154C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = Controllers/SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			children = (
 				93F55B161CB8522100E7EF4B /* ShiftDetailViewController.swift */,
 				93535A6F1CB669690073BDB3 /* EventsViewController.swift */,
+				F89843B81CEDFD2E009B154C /* SignInViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				TargetAttributes = {
 					9390ABB61CA47516006F7572 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = TR8JBFJ3WX;
 					};
 					9390ABCC1CA47517006F7572 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -494,6 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89843B91CEDFD2E009B154C /* SignInViewController.swift in Sources */,
 				93A37D011CADC918006089D1 /* EventCollectionViewCell.swift in Sources */,
 				93F55B2B1CB90DCF00E7EF4B /* Coords.swift in Sources */,
 				93535A701CB669690073BDB3 /* EventsViewController.swift in Sources */,
@@ -657,11 +662,14 @@
 			baseConfigurationReference = 5C4823273F8BC8802CC8A9B5 /* Pods-Where2Help.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Where2Help/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.where2help.Where2Help;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -670,11 +678,14 @@
 			baseConfigurationReference = E012CEC14CDADDB09E56A834 /* Pods-Where2Help.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Where2Help/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.where2help.Where2Help;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
