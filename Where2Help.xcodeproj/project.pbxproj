@@ -41,6 +41,7 @@
 		93F55B301CB93C1700E7EF4B /* shifts-current.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F55B2D1CB93C1700E7EF4B /* shifts-current.json */; };
 		93F55B311CB93C1700E7EF4B /* shifts-past.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F55B2E1CB93C1700E7EF4B /* shifts-past.json */; };
 		F89843B91CEDFD2E009B154C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89843B81CEDFD2E009B154C /* SignInViewController.swift */; };
+		F89843BB1CEE0BEE009B154C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89843BA1CEE0BEE009B154C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		93F55B2E1CB93C1700E7EF4B /* shifts-past.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "shifts-past.json"; sourceTree = "<group>"; };
 		E012CEC14CDADDB09E56A834 /* Pods-Where2Help.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where2Help.release.xcconfig"; path = "Pods/Target Support Files/Pods-Where2Help/Pods-Where2Help.release.xcconfig"; sourceTree = "<group>"; };
 		F89843B81CEDFD2E009B154C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = Controllers/SignInViewController.swift; sourceTree = "<group>"; };
+		F89843BA1CEE0BEE009B154C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 				9390ABC31CA47516006F7572 /* Assets.xcassets */,
 				9390ABC51CA47516006F7572 /* LaunchScreen.storyboard */,
 				9390ABC81CA47516006F7572 /* Info.plist */,
+				F89843BA1CEE0BEE009B154C /* Constants.swift */,
 			);
 			path = Where2Help;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				93535A701CB669690073BDB3 /* EventsViewController.swift in Sources */,
 				9390ABBB1CA47516006F7572 /* AppDelegate.swift in Sources */,
 				930230AF1CAD7D1000AFF791 /* EventStore.swift in Sources */,
+				F89843BB1CEE0BEE009B154C /* Constants.swift in Sources */,
 				93535A721CB66D530073BDB3 /* EventsInteractor.swift in Sources */,
 				93F55B151CB7F37B00E7EF4B /* ShiftPresenter.swift in Sources */,
 				93535A781CB67FE00073BDB3 /* EventDay.swift in Sources */,
