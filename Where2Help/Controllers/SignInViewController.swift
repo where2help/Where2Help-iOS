@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var emailTextField: UITextField!
@@ -26,8 +27,22 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   }
 
   func signIn() {
-    let emailAddress = emailTextField.text
-    let password = passwordTextField.text
+    let emailAddress = emailTextField.text!
+    let password = passwordTextField.text!
+    let params = [
+      "email": emailAddress,
+      "password": password
+    ]
+    Alamofire.request(.POST, "http://staging-where2help.herokuapp.com/api/v1/users/login", parameters: params).responseJSON { response in
+      print(response.request)  // original URL request
+      print(response.response) // URL response
+      print(response.data)     // server data
+      print(response.result)   // result of response serialization
+
+      if let JSON = response.result.value {
+        print("JSON: \(JSON)")
+      }
+    }
     print("Signing in with email: \(emailAddress) password: \(password)")
   }
 }
