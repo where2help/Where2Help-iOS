@@ -601,6 +601,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="9Vy-L5-yhy" id="lt7-k8-hED"/>
                         <outlet property="passwordTextField" destination="7an-n5-unf" id="MmL-nA-8Lv"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="SignInSuccessful" id="YBe-Bn-A9Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1RU-AP-7nl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -788,6 +789,7 @@
         <image name="Where2HelpTitle" width="485" height="80"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BZP-l7-FgB"/>
+        <segue reference="YBe-Bn-A9Q"/>
+        <segue reference="zAM-wr-6xO"/>
     </inferredMetricsTieBreakers>
 </document>
