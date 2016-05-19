@@ -33,7 +33,9 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
       "email": emailAddress,
       "password": password
     ]
-    Alamofire.request(.POST, "http://staging-where2help.herokuapp.com/api/v1/users/login", parameters: params).responseJSON { response in
+    Alamofire.request(.POST, "\(Constants.Where2HelpAPIUrl)/users/login", parameters: params)
+      .validate(statusCode: 200..<300)
+      .responseJSON { response in
       print(response.request)  // original URL request
       print(response.response) // URL response
       print(response.data)     // server data
