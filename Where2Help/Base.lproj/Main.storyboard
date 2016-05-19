@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wmc-FH-uu8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wmc-FH-uu8">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -513,7 +513,7 @@
         <!--Sign In-->
         <scene sceneID="Vmg-KQ-zcI">
             <objects>
-                <viewController title="Sign In" id="dEf-XA-Vdu" sceneMemberID="viewController">
+                <viewController title="Sign In" id="dEf-XA-Vdu" customClass="SignInViewController" customModule="Where2Help" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="anr-LR-t8R"/>
                         <viewControllerLayoutGuide type="bottom" id="b6P-Nm-NlH"/>
@@ -525,7 +525,10 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Vy-L5-yhy">
                                 <rect key="frame" x="20" y="137.5" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dEf-XA-Vdu" id="fqZ-ke-S8y"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJ3-Pn-cs7">
                                 <rect key="frame" x="20" y="107" width="41" height="20.5"/>
@@ -536,7 +539,10 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7an-n5-unf">
                                 <rect key="frame" x="20" y="228" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dEf-XA-Vdu" id="pIk-qF-dzY"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pn5-vB-gCm">
                                 <rect key="frame" x="20" y="197.5" width="74" height="20.5"/>
@@ -567,7 +573,7 @@
                                 <color key="tintColor" red="0.98039215690000003" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="iu9-Ul-eR8"/>
+                                    <action selector="signInButtonTapped:" destination="dEf-XA-Vdu" eventType="touchUpInside" id="YEt-5s-2G7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -592,6 +598,10 @@
                             <constraint firstItem="ifC-Nt-NQu" firstAttribute="centerX" secondItem="CXy-c7-ezv" secondAttribute="centerX" id="xHg-e5-Gkr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="9Vy-L5-yhy" id="lt7-k8-hED"/>
+                        <outlet property="passwordTextField" destination="7an-n5-unf" id="MmL-nA-8Lv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1RU-AP-7nl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -778,7 +788,6 @@
         <image name="Where2HelpTitle" width="485" height="80"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iu9-Ul-eR8"/>
         <segue reference="BZP-l7-FgB"/>
     </inferredMetricsTieBreakers>
 </document>
