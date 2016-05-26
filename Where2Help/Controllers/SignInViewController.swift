@@ -13,6 +13,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var emailTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
   @IBOutlet weak var errorLabel: UILabel!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
@@ -43,6 +44,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         "email": emailAddress,
         "password": password
       ]
+//      actInd.hidesWhenStopped = true
+      activityIndicator.startAnimating()
       Alamofire.request(.POST, "\(Constants.Where2HelpAPIUrl)/users/login", parameters: params)
         .validate(statusCode: 200..<300)
         .responseJSON { response in
@@ -66,6 +69,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
               }
             }
           }
+        self.activityIndicator.stopAnimating()
       }
       print("Signing in with email: \(emailAddress) password: \(password)")
     }

@@ -583,6 +583,10 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XVc-LA-3BP">
+                                <rect key="frame" x="282" y="364" width="37" height="37"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -597,8 +601,11 @@
                             <constraint firstItem="7an-n5-unf" firstAttribute="leading" secondItem="SJ3-Pn-cs7" secondAttribute="leading" id="QjK-fs-Eod"/>
                             <constraint firstItem="0ba-k9-lN7" firstAttribute="top" secondItem="7an-n5-unf" secondAttribute="bottom" constant="31" id="SmM-9g-i26"/>
                             <constraint firstItem="BeJ-90-QV1" firstAttribute="centerX" secondItem="CXy-c7-ezv" secondAttribute="centerX" id="U9x-9S-YHX"/>
+                            <constraint firstItem="XVc-LA-3BP" firstAttribute="width" secondItem="CXy-c7-ezv" secondAttribute="width" id="VVV-hy-X08"/>
                             <constraint firstItem="7an-n5-unf" firstAttribute="trailing" secondItem="9Vy-L5-yhy" secondAttribute="trailing" id="WZM-2B-OjY"/>
                             <constraint firstItem="SJ3-Pn-cs7" firstAttribute="top" secondItem="ifC-Nt-NQu" secondAttribute="bottom" constant="30" id="cZN-C1-cQo"/>
+                            <constraint firstItem="XVc-LA-3BP" firstAttribute="centerX" secondItem="ht6-1A-HxU" secondAttribute="centerX" id="eG2-Bl-Z0t"/>
+                            <constraint firstItem="XVc-LA-3BP" firstAttribute="height" secondItem="CXy-c7-ezv" secondAttribute="height" id="gd7-eq-eej"/>
                             <constraint firstItem="0ba-k9-lN7" firstAttribute="centerX" secondItem="BeJ-90-QV1" secondAttribute="centerX" id="hpK-Jj-dse"/>
                             <constraint firstItem="ifC-Nt-NQu" firstAttribute="top" secondItem="anr-LR-t8R" secondAttribute="bottom" constant="33" id="psg-lZ-zU2"/>
                             <constraint firstItem="pn5-vB-gCm" firstAttribute="top" secondItem="9Vy-L5-yhy" secondAttribute="bottom" constant="30" id="qGY-WF-ryY"/>
@@ -614,6 +621,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="XVc-LA-3BP" id="R9p-dC-M1B"/>
                         <outlet property="emailTextField" destination="9Vy-L5-yhy" id="lt7-k8-hED"/>
                         <outlet property="errorLabel" destination="0ba-k9-lN7" id="LE7-7G-hro"/>
                         <outlet property="passwordTextField" destination="7an-n5-unf" id="MmL-nA-8Lv"/>
