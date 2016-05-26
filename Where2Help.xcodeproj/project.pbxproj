@@ -45,6 +45,7 @@
 		F89843B91CEDFD2E009B154C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89843B81CEDFD2E009B154C /* SignInViewController.swift */; };
 		F89843BB1CEE0BEE009B154C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89843BA1CEE0BEE009B154C /* Constants.swift */; };
 		F8AA2CFD1CF7451500F108EE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA2CFC1CF7451500F108EE /* APIClient.swift */; };
+		F8AA2D001CF7516400F108EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA2CFF1CF7516400F108EE /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		F89843B81CEDFD2E009B154C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = Controllers/SignInViewController.swift; sourceTree = "<group>"; };
 		F89843BA1CEE0BEE009B154C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F8AA2CFC1CF7451500F108EE /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Models/APIClient.swift; sourceTree = "<group>"; };
+		F8AA2CFF1CF7516400F108EE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				F8AA2CFC1CF7451500F108EE /* APIClient.swift */,
+				F8AA2CFF1CF7516400F108EE /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				F89843B91CEDFD2E009B154C /* SignInViewController.swift in Sources */,
 				93A37D011CADC918006089D1 /* EventCollectionViewCell.swift in Sources */,
 				93F55B2B1CB90DCF00E7EF4B /* Coords.swift in Sources */,
+				F8AA2D001CF7516400F108EE /* User.swift in Sources */,
 				93535A701CB669690073BDB3 /* EventsViewController.swift in Sources */,
 				9390ABBB1CA47516006F7572 /* AppDelegate.swift in Sources */,
 				930230AF1CAD7D1000AFF791 /* EventStore.swift in Sources */,
