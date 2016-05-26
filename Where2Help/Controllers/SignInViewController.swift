@@ -12,6 +12,12 @@ import Alamofire
 class SignInViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var emailTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
+  @IBOutlet weak var errorLabel: UILabel!
+
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    errorLabel.hidden = true
+  }
 
   func textFieldShouldReturn(textField: UITextField) -> Bool {
     if textField == emailTextField {
@@ -28,27 +34,46 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   }
 
   func signIn() {
-    let emailAddress = emailTextField.text!
-    let password = passwordTextField.text!
-    let params = [
-      "email": emailAddress,
-      "password": password
-    ]
-    Alamofire.request(.POST, "\(Constants.Where2HelpAPIUrl)/users/login", parameters: params)
-      .validate(statusCode: 200..<300)
-      .responseJSON { response in
-      print(response.request)  // original URL request
-      print(response.response) // URL response
-      print(response.data)     // server data
-      print(response.result)   // result of response serialization
-
-      if let JSON = response.result.value {
-        if response.result.isSuccess {
-          self.performSegueWithIdentifier("SignInSuccessful", sender: self)
-        }
-        print("JSON: \(JSON)")
+    if let emailAddress = emailTextField.text, password = passwordTextField.text {
+      if emailAddress.isEmpty || password.isEmpty {
+        showError("Please make sure to fill in your email and password!")
+        return
       }
+      let params = [
+        "email": emailAddress,
+        "password": password
+      ]
+      Alamofire.request(.POST, "\(Constants.Where2HelpAPIUrl)/users/login", parameters: params)
+        .validate(statusCode: 200..<300)
+        .responseJSON { response in
+          switch response.result {
+          case .Success:
+            if let JSON = response.result.value {
+              self.performSegueWithIdentifier("SignInSuccessful", sender: self)
+              print("JSON: \(JSON)")
+            }
+          case .Failure(_):
+            if let statusCode = response.response?.statusCode {
+              switch statusCode {
+              case 404:
+                self.showError("User email \(emailAddress) not found.")
+              case 401:
+                self.showError("Incorrect email/password combination.")
+              case 403:
+                self.showError("Please confirm your email address!")
+              default:
+                self.showError("Could not sign you in right now. Please try again later")
+              }
+            }
+          }
+      }
+      print("Signing in with email: \(emailAddress) password: \(password)")
     }
-    print("Signing in with email: \(emailAddress) password: \(password)")
+  }
+
+  func showError(message: String) {
+    errorLabel.hidden = false
+    errorLabel.text = message
+    errorLabel.sizeToFit()
   }
 }

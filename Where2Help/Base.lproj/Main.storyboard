@@ -576,6 +576,12 @@
                                     <action selector="signInButtonTapped:" destination="dEf-XA-Vdu" eventType="touchUpInside" id="YEt-5s-2G7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ba-k9-lN7">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -586,10 +592,13 @@
                             <constraint firstItem="9Vy-L5-yhy" firstAttribute="top" secondItem="SJ3-Pn-cs7" secondAttribute="bottom" constant="10" id="Jj6-F3-g5b"/>
                             <constraint firstItem="SJ3-Pn-cs7" firstAttribute="leading" secondItem="CXy-c7-ezv" secondAttribute="leadingMargin" id="Kpo-2g-HDq"/>
                             <constraint firstItem="ht6-1A-HxU" firstAttribute="trailing" secondItem="9Vy-L5-yhy" secondAttribute="trailing" id="Ohi-Xc-Ibq"/>
+                            <constraint firstItem="0ba-k9-lN7" firstAttribute="centerX" secondItem="7an-n5-unf" secondAttribute="centerX" id="Otx-gN-MER"/>
                             <constraint firstItem="7an-n5-unf" firstAttribute="leading" secondItem="SJ3-Pn-cs7" secondAttribute="leading" id="QjK-fs-Eod"/>
+                            <constraint firstItem="0ba-k9-lN7" firstAttribute="top" secondItem="7an-n5-unf" secondAttribute="bottom" constant="31" id="SmM-9g-i26"/>
                             <constraint firstItem="BeJ-90-QV1" firstAttribute="centerX" secondItem="CXy-c7-ezv" secondAttribute="centerX" id="U9x-9S-YHX"/>
                             <constraint firstItem="7an-n5-unf" firstAttribute="trailing" secondItem="9Vy-L5-yhy" secondAttribute="trailing" id="WZM-2B-OjY"/>
                             <constraint firstItem="SJ3-Pn-cs7" firstAttribute="top" secondItem="ifC-Nt-NQu" secondAttribute="bottom" constant="30" id="cZN-C1-cQo"/>
+                            <constraint firstItem="0ba-k9-lN7" firstAttribute="centerX" secondItem="BeJ-90-QV1" secondAttribute="centerX" id="hpK-Jj-dse"/>
                             <constraint firstItem="ifC-Nt-NQu" firstAttribute="top" secondItem="anr-LR-t8R" secondAttribute="bottom" constant="33" id="psg-lZ-zU2"/>
                             <constraint firstItem="pn5-vB-gCm" firstAttribute="top" secondItem="9Vy-L5-yhy" secondAttribute="bottom" constant="30" id="qGY-WF-ryY"/>
                             <constraint firstItem="b6P-Nm-NlH" firstAttribute="top" secondItem="BeJ-90-QV1" secondAttribute="bottom" constant="30" id="qmO-we-bk1"/>
@@ -597,16 +606,22 @@
                             <constraint firstItem="BeJ-90-QV1" firstAttribute="top" secondItem="ht6-1A-HxU" secondAttribute="bottom" constant="15" id="vkp-XB-JHc"/>
                             <constraint firstItem="ifC-Nt-NQu" firstAttribute="centerX" secondItem="CXy-c7-ezv" secondAttribute="centerX" id="xHg-e5-Gkr"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Otx-gN-MER"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="9Vy-L5-yhy" id="lt7-k8-hED"/>
+                        <outlet property="errorLabel" destination="0ba-k9-lN7" id="LE7-7G-hro"/>
                         <outlet property="passwordTextField" destination="7an-n5-unf" id="MmL-nA-8Lv"/>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="SignInSuccessful" id="YBe-Bn-A9Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1RU-AP-7nl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="-1214"/>
+            <point key="canvasLocation" x="696" y="-1214"/>
         </scene>
         <!--Landing Page-->
         <scene sceneID="LBF-MO-hfQ">
