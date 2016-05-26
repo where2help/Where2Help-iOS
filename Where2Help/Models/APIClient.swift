@@ -40,4 +40,8 @@ struct APIClient {
     }
     print("Signing in with email: \(email) password: \(password)")
   }
+
+  static func getEvents(user: User, success:(json: AnyObject) -> Void, failure:(message: String) -> Void) {
+    return
+  }
 }
