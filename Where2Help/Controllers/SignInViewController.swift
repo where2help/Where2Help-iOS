@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var emailTextField: UITextField!
@@ -37,41 +36,23 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   func signIn() {
     if let emailAddress = emailTextField.text, password = passwordTextField.text {
       if emailAddress.isEmpty || password.isEmpty {
-        showError("Please make sure to fill in your email and password!")
+        self.showError("Please make sure to fill in your email and password!")
         return
       }
-      let params = [
-        "email": emailAddress,
-        "password": password
-      ]
-//      actInd.hidesWhenStopped = true
       activityIndicator.startAnimating()
-      Alamofire.request(.POST, "\(Constants.Where2HelpAPIUrl)/users/login", parameters: params)
-        .validate(statusCode: 200..<300)
-        .responseJSON { response in
-          switch response.result {
-          case .Success:
-            if let JSON = response.result.value {
-              self.performSegueWithIdentifier("SignInSuccessful", sender: self)
-              print("JSON: \(JSON)")
-            }
-          case .Failure(_):
-            if let statusCode = response.response?.statusCode {
-              switch statusCode {
-              case 404:
-                self.showError("User email \(emailAddress) not found.")
-              case 401:
-                self.showError("Incorrect email/password combination.")
-              case 403:
-                self.showError("Please confirm your email address!")
-              default:
-                self.showError("Could not sign you in right now. Please try again later")
-              }
-            }
-          }
-        self.activityIndicator.stopAnimating()
-      }
-      print("Signing in with email: \(emailAddress) password: \(password)")
+      APIClient.login(emailAddress, password: password,
+        success: { (json: AnyObject) -> Void in
+          self.activityIndicator.stopAnimating()
+          self.performSegueWithIdentifier("SignInSuccessful", sender: self)
+          print("JSON: \(json)")
+        },
+        failure: { (message: String) -> Void in
+          self.activityIndicator.stopAnimating()
+          self.showError(message)
+        }
+      )
+      activityIndicator.startAnimating()
+
     }
   }
 

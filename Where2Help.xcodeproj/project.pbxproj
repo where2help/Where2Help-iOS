@@ -44,6 +44,7 @@
 		93F55B311CB93C1700E7EF4B /* shifts-past.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F55B2E1CB93C1700E7EF4B /* shifts-past.json */; };
 		F89843B91CEDFD2E009B154C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89843B81CEDFD2E009B154C /* SignInViewController.swift */; };
 		F89843BB1CEE0BEE009B154C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89843BA1CEE0BEE009B154C /* Constants.swift */; };
+		F8AA2CFD1CF7451500F108EE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA2CFC1CF7451500F108EE /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		EF170BDA0D0798BAC39ECC4C /* Pods-Where2HelpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where2HelpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Where2HelpTests/Pods-Where2HelpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F89843B81CEDFD2E009B154C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = Controllers/SignInViewController.swift; sourceTree = "<group>"; };
 		F89843BA1CEE0BEE009B154C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8AA2CFC1CF7451500F108EE /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Models/APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 		930230A71CAD703900AFF791 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8AA2CFC1CF7451500F108EE /* APIClient.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				93F55B151CB7F37B00E7EF4B /* ShiftPresenter.swift in Sources */,
 				93535A781CB67FE00073BDB3 /* EventDay.swift in Sources */,
 				93F55B171CB8522100E7EF4B /* ShiftDetailViewController.swift in Sources */,
+				F8AA2CFD1CF7451500F108EE /* APIClient.swift in Sources */,
 				93535A761CB67FD90073BDB3 /* EventCalendar.swift in Sources */,
 				93535A741CB66DE70073BDB3 /* EventsHandler.swift in Sources */,
 				93A43F241CA55093004D1774 /* ProfileTableViewController.swift in Sources */,
