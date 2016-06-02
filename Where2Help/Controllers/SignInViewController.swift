@@ -14,6 +14,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var errorLabel: UILabel!
   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+  var user : User?
+
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
     errorLabel.hidden = true
@@ -43,8 +45,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
       APIClient.login(emailAddress, password: password,
         success: { (user: User) -> Void in
           self.activityIndicator.stopAnimating()
+          self.user = user
           self.performSegueWithIdentifier("SignInSuccessful", sender: self)
-          print("JSON: \(json)")
         },
         failure: { (message: String) -> Void in
           self.activityIndicator.stopAnimating()
@@ -52,7 +54,19 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         }
       )
       activityIndicator.startAnimating()
+    }
+  }
 
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "SignInSuccessful" {
+      if let tabController : UITabBarController = segue.destinationViewController as? UITabBarController {
+        print(tabController.viewControllers!)
+        if let navController : UINavigationController = tabController.viewControllers?.first as? UINavigationController {
+          if let eventsController : EventsViewController = navController.topViewController as? EventsViewController {
+            eventsController.user = self.user!
+          }
+        }
+      }
     }
   }
 
