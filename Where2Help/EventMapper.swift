@@ -64,7 +64,7 @@ struct Event: JSONJoy {
 }
 
 class EventMapper {
-    class func map(data: NSData) -> [Event]? {
+    class func map(data: NSArray) -> [Event]? {
         let decoder = JSONDecoder(data)
         var events = [Event]()
         for eDecoder in decoder.array! {

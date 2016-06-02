@@ -10,51 +10,59 @@ import Foundation
 import PromiseKit
 
 class EventStore {
-  func filter(filterName: ListFilter) -> Promise<[Event]> {
+  func filter(filterName: ListFilter, user: User) -> Promise<[Event]> {
     switch filterName {
     case .Current:
-      return current()
+      return current(user)
     case .Past:
-      return past()
+      return past(user)
     case .All:
-      return all()
+      return all(user)
     }
   }
 
-  private func current() -> Promise<[Event]> {
+  private func current(user: User) -> Promise<[Event]> {
     return Promise { resolve, reject in
-
-      let url = NSBundle.mainBundle().URLForResource("shifts-current", withExtension: "json")
-      let data = NSData(contentsOfURL: url!)
-      if let events = EventMapper.map(data!) {
-        resolve(events)
-        return
-      }
-      resolve([])
+      APIClient.getEvents(user,
+        success: { (json) in
+          if let events = EventMapper.map(json) {
+            resolve(events)
+            return
+          }
+        },
+        failure: { (message) in
+          print(message)
+          resolve([])
+        }
+      )
     }
   }
 
-  private func all() -> Promise<[Event]> {
+  private func all(user: User) -> Promise<[Event]> {
     return Promise { resolve, reject in
-      let url = NSBundle.mainBundle().URLForResource("shifts-all", withExtension: "json")
-      let data = NSData(contentsOfURL: url!)
-      if let events = EventMapper.map(data!) {
-        resolve(events)
-        return
-      }
-      resolve([])
+      APIClient.getEvents(user, success: { (json) in
+        if let events = EventMapper.map(json) {
+          resolve(events)
+          return
+        }
+        }, failure: { (message) in
+          print(message)
+          resolve([])
+      })
     }
   }
 
-  private func past() -> Promise<[Event]> {
+  private func past(user: User) -> Promise<[Event]> {
     return Promise { resolve, reject in
-      let url = NSBundle.mainBundle().URLForResource("shifts-past", withExtension: "json")
-      let data = NSData(contentsOfURL: url!)
-      if let events = EventMapper.map(data!) {
-        resolve(events)
-        return
-      }
-      resolve([])
+      APIClient.getEvents(user, success: { (json) in
+        if let events = EventMapper.map(json) {
+          resolve(events)
+          return
+        }
+        }, failure: { (message) in
+          print(message)
+          resolve([])
+      })
     }
   }
 }
