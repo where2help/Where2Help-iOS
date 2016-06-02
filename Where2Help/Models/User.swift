@@ -9,15 +9,29 @@
 import Foundation
 import JSONJoy
 
-struct User: JSONJoy {
+class User: JSONJoy {
   let ID: Int!
   var firstName: String!
   var lastName: String!
   var token: String?
 
-  init(_ decoder: JSONDecoder) throws {
+  required init(_ decoder: JSONDecoder) throws {
     ID = try decoder["id"].getInt()
     firstName = try decoder["first_name"].getString()
     lastName = try decoder["last_name"].getString()
+  }
+}
+
+class UserMapper {
+  class func map(data: NSDictionary) -> User? {
+    let decoder = JSONDecoder(data)
+    var user : User
+    do {
+      try user = User(decoder)
+    } catch {
+      print("unable to parse the JSON")
+      return nil
+    }
+    return user
   }
 }
