@@ -60,7 +60,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "SignInSuccessful" {
       if let tabController : UITabBarController = segue.destinationViewController as? UITabBarController {
-        print(tabController.viewControllers!)
         if let navController : UINavigationController = tabController.viewControllers?.first as? UINavigationController {
           if let eventsController : EventsViewController = navController.topViewController as? EventsViewController {
             eventsController.user = self.user!
