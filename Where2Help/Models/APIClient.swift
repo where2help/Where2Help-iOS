@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 struct APIClient {
-  static func login(email: String, password: String, success:(json: AnyObject) -> Void, failure:(message: String) -> Void) {
+  static func login(email: String, password: String, success:(user: User) -> Void, failure:(message: String) -> Void) {
     let params = [
       "email": email,
       "password": password
@@ -21,7 +21,10 @@ struct APIClient {
         switch response.result {
         case .Success:
           if let JSON = response.result.value {
-            success(json: JSON)
+            if let user = UserMapper.map(JSON as! NSDictionary), token = response.response?.allHeaderFields["TOKEN"] {
+              updateTokenForUser(user, token: token as! String)
+              success(user: user)
+            }
           }
         case .Failure(_):
           if let statusCode = response.response?.statusCode {

@@ -41,7 +41,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
       }
       activityIndicator.startAnimating()
       APIClient.login(emailAddress, password: password,
-        success: { (json: AnyObject) -> Void in
+        success: { (user: User) -> Void in
           self.activityIndicator.stopAnimating()
           self.performSegueWithIdentifier("SignInSuccessful", sender: self)
           print("JSON: \(json)")
