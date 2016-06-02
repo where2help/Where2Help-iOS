@@ -42,8 +42,8 @@ class EventsInteractor {
     
     private func loadEvents() {
         let store = EventStore()
-        store.filter(currentFilter).then { evnts -> Void in
-            self.events.resetEvents(evnts)
+        store.filter(currentFilter).then { events -> Void in
+            self.events.resetEvents(events)
             self.handler.handleEventsUpdate()
         }
     }
