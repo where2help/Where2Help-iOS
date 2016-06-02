@@ -46,8 +46,10 @@ struct APIClient {
 
   static func getEvents(user: User, success:(json: NSArray) -> Void, failure:(message: String) -> Void) {
     let headers = headerForUser(user)
-
-    Alamofire.request(.GET, "\(Constants.Where2HelpAPIUrl)/events", headers: headers)
+    let params = [
+      "upcoming": true
+    ]
+    Alamofire.request(.GET, "\(Constants.Where2HelpAPIUrl)/events", headers: headers, parameters: params)
       .validate(statusCode: 200..<300)
       .responseJSON { response in
         if let token = response.response?.allHeaderFields["TOKEN"] {
