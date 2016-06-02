@@ -29,8 +29,6 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     //        let w = view.frame.width - 30
     //        flowLayout.itemSize =
     interactor.setup(handler: self)
-
-
   }
 
   private func setupEventCell() {
