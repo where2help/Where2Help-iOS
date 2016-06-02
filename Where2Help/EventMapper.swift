@@ -35,7 +35,6 @@ struct Event: JSONJoy {
     let ID: Int!
     let title: String!
     let description: String?
-    let shiftLength: Int!
     let address: String?
     let lat: Double?
     let lng: Double?
@@ -49,7 +48,6 @@ struct Event: JSONJoy {
         ID = try decoder["id"].getInt()
         title = try decoder["title"].getString()
         description = try decoder["description"].getString()
-        shiftLength = try decoder["shift_length"].getInt()
         address = try decoder["address"].getString()
         lat = decoder["lat"].double
         lng = decoder["lng"].double
