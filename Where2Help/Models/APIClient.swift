@@ -42,6 +42,32 @@ struct APIClient {
   }
 
   static func getEvents(user: User, success:(json: AnyObject) -> Void, failure:(message: String) -> Void) {
+    let headers = headerForUser(user)
+
+    Alamofire.request(.GET, "\(Constants.Where2HelpAPIUrl)/events", headers: headers)
+      .validate(statusCode: 200..<300)
+      .responseJSON { response in
+        switch response.result {
+        case .Success:
+          if let JSON = response.result.value, token = response.response?.allHeaderFields["TOKEN"] {
+            updateTokenForUser(user, token: token as! String)
+            success(json: JSON)
+          }
+        case .Failure(_):
+          failure(message: "BAD")
+        }
+    }
+
     return
+  }
+
+  private static func headerForUser(user: User) -> [String:String] {
+    return [
+      "Authorization": "Token token=\(user.token)"
+    ]
+  }
+
+  private static func updateTokenForUser(user: User, token: String) {
+    user.token = token
   }
 }
