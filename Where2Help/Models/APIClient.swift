@@ -59,7 +59,9 @@ struct APIClient {
           updateTokenForUser(user, token: token as! String)
           switch response.result {
           case .Success:
-            print("YAY")
+            if let JSON : NSArray = response.result.value as? NSArray {
+              success(json: JSON)
+            }
           case .Failure(_):
             failure(message: "BAD")
           }
