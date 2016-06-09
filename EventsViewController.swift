@@ -16,7 +16,6 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
   let interactor = EventsInteractor()
 
   var detailViewController: ShiftDetailViewController!
-  var user: User?
 
   @IBOutlet weak var filterPickerControl: UISegmentedControl!
   @IBOutlet weak var collectionView: UICollectionView!
@@ -47,10 +46,6 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
   func handleEventsUpdate() {
     print("Events updated")
     collectionView.reloadData()
-  }
-
-  func currentUser() -> User? {
-    return user
   }
 
   // MARK - TableViewDelegate/DataSource

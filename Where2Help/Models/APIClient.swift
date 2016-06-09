@@ -22,6 +22,7 @@ struct APIClient {
         case .Success:
           if let JSON = response.result.value {
             if let user = UserMapper.map(JSON as! NSDictionary), token = response.response?.allHeaderFields["TOKEN"] {
+              user.password = password  
               updateTokenForUser(user, token: token as! String)
               success(user: user)
             }

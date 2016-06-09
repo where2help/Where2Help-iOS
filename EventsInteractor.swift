@@ -42,7 +42,7 @@ class EventsInteractor {
 
   private func loadEvents() {
     let store = EventStore()
-    if let user = self.handler.currentUser() {
+    if let user = UserManager.currentUser {
       store.filter(currentFilter, user: user).then { events -> Void in
         self.events.resetEvents(events)
         self.handler.handleEventsUpdate()

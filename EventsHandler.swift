@@ -10,5 +10,4 @@ import Foundation
 
 protocol EventsHandler {
     func handleEventsUpdate()
-    func currentUser() -> User?
 }
