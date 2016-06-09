@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Locksmith
 
 class UserManager {
 
@@ -20,5 +21,33 @@ class UserManager {
 
   class func userSignedIn(user: User) {
     Static.currentUser = user
+    persistUser(user)
+  }
+
+  class func loadUserCredentialsIfPersisted() -> [String: String]? {
+    let defaults = NSUserDefaults.standardUserDefaults()
+    if let email : String = defaults.objectForKey("email") as? String {
+      do {
+        if let dictionary = Locksmith.loadDataForUserAccount(email) {
+          if let password : String = dictionary["password"] as? String {
+            return ["email": email, "password": password]
+          }
+        }
+      }
+    }
+    return [:]
+  }
+
+  private class func persistUser(user: User) {
+    do {
+      if let email: String = user.email, password: String = user.password {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(email, forKey: "email")
+        try Locksmith.saveData(["password": password], forUserAccount: email)
+      }
+    }
+    catch {
+      print("Could not persist user")
+    }
   }
 }

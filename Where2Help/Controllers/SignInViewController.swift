@@ -43,7 +43,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
       APIClient.login(emailAddress, password: password,
         success: { (user: User) -> Void in
           self.activityIndicator.stopAnimating()
-          UserManager.userSignedIn(user)
           self.performSegueWithIdentifier("SignInSuccessful", sender: self)
         },
         failure: { (message: String) -> Void in

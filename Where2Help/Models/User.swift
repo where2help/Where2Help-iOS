@@ -15,6 +15,7 @@ class User: JSONJoy {
   var lastName: String!
   var token: String?
   var password: String?
+  var email: String?
 
   required init(_ decoder: JSONDecoder) throws {
     ID = try decoder["id"].getInt()
