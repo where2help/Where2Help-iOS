@@ -17,7 +17,6 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
 
   var detailViewController: ShiftDetailViewController!
 
-  @IBOutlet weak var filterPickerControl: UISegmentedControl!
   @IBOutlet weak var collectionView: UICollectionView!
 
   override func viewDidLoad() {
@@ -69,10 +68,5 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     let h = CGFloat(80 + (multiplier * 50))
     let w = view.frame.width - 30
     return CGSize(width: w, height: h)
-  }
-
-
-  @IBAction func filterPickerTapped(sender: UISegmentedControl) {
-    interactor.filterList(index: sender.selectedSegmentIndex)
   }
 }

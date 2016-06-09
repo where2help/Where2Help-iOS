@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="748" y="-415"/>
         </scene>
-        <!--My Schedule-->
+        <!--Events-->
         <scene sceneID="hS8-iE-2YP">
             <objects>
-                <viewController title="My Schedule" id="h8U-sD-pHG" customClass="EventsViewController" customModule="Where2Help" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Events" id="h8U-sD-pHG" customClass="EventsViewController" customModule="Where2Help" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ECZ-So-Tuz"/>
                         <viewControllerLayoutGuide type="bottom" id="vji-Dk-3aF"/>
@@ -35,20 +35,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FFT-Lj-Qws">
-                                <rect key="frame" x="40" y="90" width="520" height="29"/>
-                                <segments>
-                                    <segment title="Upcoming"/>
-                                    <segment title="Past"/>
-                                    <segment title="All"/>
-                                </segments>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="filterPickerTapped:" destination="h8U-sD-pHG" eventType="valueChanged" id="uqp-fT-v8v"/>
-                                </connections>
-                            </segmentedControl>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9DQ-Fi-pHn">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pIu-aA-vUH">
-                                <rect key="frame" x="0.0" y="138" width="600" height="413"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OxR-Hh-ABN">
                                     <size key="itemSize" width="394.5" height="345"/>
@@ -76,19 +68,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="FFT-Lj-Qws" secondAttribute="trailing" constant="20" id="162-MF-5se"/>
                             <constraint firstItem="pIu-aA-vUH" firstAttribute="leading" secondItem="AGc-cp-LrU" secondAttribute="leading" id="7p4-kS-yxb"/>
                             <constraint firstItem="vji-Dk-3aF" firstAttribute="top" secondItem="pIu-aA-vUH" secondAttribute="bottom" id="8Hd-95-kxF"/>
-                            <constraint firstItem="pIu-aA-vUH" firstAttribute="top" secondItem="FFT-Lj-Qws" secondAttribute="bottom" constant="20" id="YyT-iR-EwL"/>
                             <constraint firstAttribute="trailing" secondItem="pIu-aA-vUH" secondAttribute="trailing" id="dnH-yx-gVg"/>
-                            <constraint firstItem="FFT-Lj-Qws" firstAttribute="leading" secondItem="AGc-cp-LrU" secondAttribute="leadingMargin" constant="20" id="ykx-ns-fng"/>
-                            <constraint firstItem="FFT-Lj-Qws" firstAttribute="top" secondItem="ECZ-So-Tuz" secondAttribute="bottom" constant="26" id="z7P-Wa-Cfu"/>
+                            <constraint firstItem="pIu-aA-vUH" firstAttribute="top" secondItem="ECZ-So-Tuz" secondAttribute="bottom" id="gor-76-4pO"/>
+                            <constraint firstItem="pIu-aA-vUH" firstAttribute="width" secondItem="AGc-cp-LrU" secondAttribute="width" id="vT8-2m-HER"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3Hl-T5-SPy"/>
                     <connections>
                         <outlet property="collectionView" destination="pIu-aA-vUH" id="ecd-Br-Iex"/>
-                        <outlet property="filterPickerControl" destination="FFT-Lj-Qws" id="NT7-dN-JBS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUM-i1-r4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -818,6 +807,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cT-cX-4Zj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="748" y="360"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1ER-s6-MkN">
+            <objects>
+                <viewController id="Hyi-az-Phc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KHL-iQ-xbB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vb3-TQ-aZi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xqi-qX-dbc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rr5-6p-DM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
