@@ -47,6 +47,25 @@ struct APIClient {
     print("Signing in with email: \(email) password: \(password)")
   }
 
+  static func optIn(user: User, shift: Shift, success:(json: NSArray) -> Void, failure:(message: String) -> Void) {
+    let headers = headerForUser(user)
+    let params = [
+      "shift_id": shift.ID
+    ]
+    Alamofire.request(.POST, "\(Constants.Where2HelpAPIUrl)/shifts/opt_in", headers: headers, parameters: params)
+      .validate(statusCode: 200..<300)
+      .responseJSON { response in
+        if let token = response.response?.allHeaderFields["TOKEN"] {
+          updateTokenForUser(user, token: token as! String)
+          switch response.result {
+          case .Success:
+            print("YAY")
+          case .Failure(_):
+            failure(message: "BAD")
+          }
+        }
+    }
+  }
   static func getEvents(user: User, success:(json: NSArray) -> Void, failure:(message: String) -> Void) {
     let headers = headerForUser(user)
     let params = [
@@ -67,10 +86,10 @@ struct APIClient {
           }
         }
     }
-
+    
     return
   }
-
+  
   private static func headerForUser(user: User) -> [String:String] {
     if let token = user.token {
       return [
@@ -79,7 +98,7 @@ struct APIClient {
     }
     return [:]
   }
-
+  
   private static func updateTokenForUser(user: User, token: String) {
     user.token = token
   }
