@@ -21,7 +21,13 @@ class ShiftDetailInteractor {
     }
     
     func toggleOptIn() {
-        print("toggle opt in")
+      if let user = UserManager.currentUser {
+        APIClient.optIn(user, shift: self.shift, success: { (json) in
+          print("worked")
+          }) { (message) in
+            print("bla")
+        }
+      }
     }
     
     private func loadShift() {
