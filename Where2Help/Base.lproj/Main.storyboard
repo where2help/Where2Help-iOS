@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navi My Schedule-->
+        <!--Navi Events-->
         <scene sceneID="bzv-q5-yW1">
             <objects>
-                <navigationController title="Navi My Schedule" id="JSe-rl-Vzu" sceneMemberID="viewController">
+                <navigationController title="Navi Events" automaticallyAdjustsScrollViewInsets="NO" id="JSe-rl-Vzu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Events" image="Events" id="V6z-Yr-fkv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="idk-b6-OPI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -100,7 +100,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="780"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mo. 20. Jun 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tl-oj-3ZJ">
-                                        <rect key="frame" x="80" y="139" width="500" height="17"/>
+                                        <rect key="frame" x="80" y="119" width="500" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="OwU-UR-lgg"/>
                                         </constraints>
@@ -109,7 +109,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Am Hauptbahnhof 1, 1100 Wien" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOU-LN-bAu">
-                                        <rect key="frame" x="80" y="196" width="500" height="17"/>
+                                        <rect key="frame" x="80" y="176" width="500" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="X17-Y2-3c8"/>
                                         </constraints>
@@ -118,7 +118,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organization Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHR-rl-Uh1">
-                                        <rect key="frame" x="80" y="520" width="500" height="17"/>
+                                        <rect key="frame" x="80" y="500" width="500" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="Iey-1R-GCK"/>
                                         </constraints>
@@ -127,16 +127,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="saH-Wf-k2h">
-                                        <rect key="frame" x="80" y="221" width="500" height="150"/>
+                                        <rect key="frame" x="80" y="201" width="500" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="asD-Lu-lvJ"/>
                                         </constraints>
                                     </mapView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0s-jk-qpQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="124"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="109"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="4/6 Volunteers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caQ-Sh-gt1">
-                                                <rect key="frame" x="80" y="92" width="500" height="20"/>
+                                                <rect key="frame" x="80" y="69" width="500" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="cDQ-3M-ffj"/>
                                                 </constraints>
@@ -145,7 +145,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Bank Hauptbahnhof" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh5-9c-wdB">
-                                                <rect key="frame" x="80" y="57" width="500" height="27"/>
+                                                <rect key="frame" x="80" y="34" width="500" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="pqM-ab-jrd"/>
                                                 </constraints>
@@ -156,11 +156,11 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="124" id="7P4-uF-8zw"/>
-                                            <constraint firstAttribute="bottom" secondItem="caQ-Sh-gt1" secondAttribute="bottom" constant="12" id="CuW-hD-pT2"/>
+                                            <constraint firstAttribute="height" constant="109" id="7P4-uF-8zw"/>
+                                            <constraint firstAttribute="bottom" secondItem="caQ-Sh-gt1" secondAttribute="bottom" constant="20" id="CuW-hD-pT2"/>
                                             <constraint firstAttribute="trailing" secondItem="sh5-9c-wdB" secondAttribute="trailing" constant="20" id="D2T-aw-gkV"/>
                                             <constraint firstItem="sh5-9c-wdB" firstAttribute="leading" secondItem="X0s-jk-qpQ" secondAttribute="leading" constant="80" id="HnB-wA-dfR"/>
-                                            <constraint firstItem="sh5-9c-wdB" firstAttribute="top" secondItem="X0s-jk-qpQ" secondAttribute="top" constant="57" id="QTg-oD-ghs"/>
+                                            <constraint firstItem="sh5-9c-wdB" firstAttribute="top" secondItem="X0s-jk-qpQ" secondAttribute="top" constant="34" id="QTg-oD-ghs"/>
                                             <constraint firstItem="caQ-Sh-gt1" firstAttribute="trailing" secondItem="sh5-9c-wdB" secondAttribute="trailing" id="UEC-af-M1e"/>
                                             <constraint firstItem="caQ-Sh-gt1" firstAttribute="top" secondItem="sh5-9c-wdB" secondAttribute="bottom" constant="8" id="hNT-Zm-Whi"/>
                                             <constraint firstAttribute="trailing" secondItem="caQ-Sh-gt1" secondAttribute="trailing" constant="20" id="roQ-GU-h4J"/>
@@ -175,7 +175,7 @@
                                         </variation>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:00 - 18:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmP-l2-ohc">
-                                        <rect key="frame" x="80" y="164" width="500" height="17"/>
+                                        <rect key="frame" x="80" y="144" width="500" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="cpZ-NF-B3a"/>
                                         </constraints>
@@ -184,7 +184,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vnK-Kb-PzF">
-                                        <rect key="frame" x="80" y="379" width="500" height="133"/>
+                                        <rect key="frame" x="80" y="359" width="500" height="133"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="RKe-mn-kjz"/>
@@ -200,7 +200,7 @@
                                         </variation>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0B1-AJ-vwL">
-                                        <rect key="frame" x="471" y="139" width="109" height="35"/>
+                                        <rect key="frame" x="471" y="124" width="109" height="35"/>
                                         <color key="backgroundColor" red="0.62745098040000002" green="0.83921568629999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="7" minY="7" maxX="7" maxY="7"/>
@@ -217,12 +217,13 @@
                                     <constraint firstItem="X0s-jk-qpQ" firstAttribute="top" secondItem="Sol-8n-lL5" secondAttribute="top" id="3IW-mI-VQD"/>
                                     <constraint firstAttribute="trailing" secondItem="3Tl-oj-3ZJ" secondAttribute="trailing" constant="20" id="4lj-en-JPy"/>
                                     <constraint firstItem="saH-Wf-k2h" firstAttribute="leading" secondItem="Sol-8n-lL5" secondAttribute="leading" constant="80" id="5HH-dm-9Ma"/>
-                                    <constraint firstItem="3Tl-oj-3ZJ" firstAttribute="top" secondItem="X0s-jk-qpQ" secondAttribute="bottom" constant="15" id="8Hw-SB-XUp"/>
+                                    <constraint firstItem="3Tl-oj-3ZJ" firstAttribute="top" secondItem="X0s-jk-qpQ" secondAttribute="bottom" constant="10" id="8Hw-SB-XUp"/>
                                     <constraint firstItem="vnK-Kb-PzF" firstAttribute="leading" secondItem="Sol-8n-lL5" secondAttribute="leading" constant="80" id="98J-Vt-LgG"/>
                                     <constraint firstItem="VOU-LN-bAu" firstAttribute="top" secondItem="dmP-l2-ohc" secondAttribute="bottom" constant="15" id="Aeq-jc-djK"/>
                                     <constraint firstAttribute="trailing" secondItem="dmP-l2-ohc" secondAttribute="trailing" constant="20" id="AlZ-CT-Qlt"/>
                                     <constraint firstItem="X0s-jk-qpQ" firstAttribute="leading" secondItem="Sol-8n-lL5" secondAttribute="leading" id="Bn1-5o-uMn"/>
                                     <constraint firstAttribute="trailing" secondItem="VOU-LN-bAu" secondAttribute="trailing" constant="20" id="Bve-KS-8Kb"/>
+                                    <constraint firstItem="3Tl-oj-3ZJ" firstAttribute="top" secondItem="X0s-jk-qpQ" secondAttribute="bottom" constant="10" id="FH9-dG-Nbl"/>
                                     <constraint firstAttribute="trailing" secondItem="qHR-rl-Uh1" secondAttribute="trailing" constant="20" id="FkV-Fb-Wds"/>
                                     <constraint firstAttribute="trailing" secondItem="0B1-AJ-vwL" secondAttribute="trailing" constant="20" id="Jg0-jM-Pfy"/>
                                     <constraint firstItem="saH-Wf-k2h" firstAttribute="top" secondItem="VOU-LN-bAu" secondAttribute="bottom" constant="8" id="Jmo-1r-AED"/>
@@ -245,6 +246,7 @@
                                     <mask key="constraints">
                                         <exclude reference="VEh-3u-S8k"/>
                                         <exclude reference="qFl-4S-Cxy"/>
+                                        <exclude reference="FH9-dG-Nbl"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -792,10 +794,10 @@
             </objects>
             <point key="canvasLocation" x="1428" y="-1214"/>
         </scene>
-        <!--Navi Events-->
+        <!--Navi Schedule-->
         <scene sceneID="e3X-cj-9ia">
             <objects>
-                <navigationController title="Navi Events" automaticallyAdjustsScrollViewInsets="NO" id="M0O-ZH-vz7" sceneMemberID="viewController">
+                <navigationController title="Navi Schedule" automaticallyAdjustsScrollViewInsets="NO" id="M0O-ZH-vz7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Schedule" image="Schedule" id="dA0-Zu-Bxa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Jz-O5-EPH">
@@ -834,7 +836,7 @@
         <image name="Where2HelpTitle" width="485" height="80"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BZP-l7-FgB"/>
         <segue reference="r5X-To-u0L"/>
+        <segue reference="zAM-wr-6xO"/>
     </inferredMetricsTieBreakers>
 </document>
