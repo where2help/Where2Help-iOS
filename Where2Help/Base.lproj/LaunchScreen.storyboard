@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Where2HelpTitle" translatesAutoresizingMaskIntoConstraints="NO" id="qkg-nl-rDh">
+                                <rect key="frame" x="148" y="372" width="305" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="Esx-5e-RfC"/>
+                                    <constraint firstAttribute="height" constant="50" id="fWa-rY-PBH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Where2HelpLogo" translatesAutoresizingMaskIntoConstraints="NO" id="TMm-YB-Qar">
+                                <rect key="frame" x="223" y="177" width="155" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="ITz-B8-6CN"/>
+                                    <constraint firstAttribute="width" constant="155" id="JPs-Sl-1Gd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TMm-YB-Qar" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dlt-5y-E1F"/>
+                            <constraint firstItem="qkg-nl-rDh" firstAttribute="top" secondItem="TMm-YB-Qar" secondAttribute="bottom" constant="40" id="QXO-de-qes"/>
+                            <constraint firstItem="TMm-YB-Qar" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-45" id="XAj-t6-3Ah"/>
+                            <constraint firstItem="qkg-nl-rDh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pcS-Uk-gLW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +46,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Where2HelpLogo" width="162" height="161"/>
+        <image name="Where2HelpTitle" width="485" height="80"/>
+    </resources>
 </document>
