@@ -18,8 +18,6 @@ class EventsInteractor {
   var handler: EventsHandler!
   let events = EventCalendar()
 
-  var currentFilter: ListFilter = .Current
-
   func setup(handler handler: EventsHandler) {
     self.handler = handler
     loadEvents()
@@ -33,17 +31,12 @@ class EventsInteractor {
     return events.eventFor(row: indexPath.row)
   }
 
-  func filterList(index index: Int) {
-    currentFilter = ListFilter(rawValue: index)!
-    loadEvents()
-  }
-
   // MARK - Private Methods
 
   private func loadEvents() {
     let store = EventStore()
     if let user = UserManager.currentUser {
-      store.filter(currentFilter, user: user).then { events -> Void in
+      store.filter(user).then { events -> Void in
         self.events.resetEvents(events)
         self.handler.handleEventsUpdate()
       }
