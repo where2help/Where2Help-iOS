@@ -16,4 +16,12 @@ struct Theme {
   static func optOutColor() -> UIColor {
     return UIColor(red:0.85, green:0.27, blue:0.33, alpha:1.0)
   }
+
+  static func availableColor() -> UIColor {
+    return UIColor(white: 0.55, alpha: 1.0)
+  }
+
+  static func youreInColor() -> UIColor {
+    return UIColor(red:0.55, green:0.76, blue:0.32, alpha:1.0)
+  }
 }
