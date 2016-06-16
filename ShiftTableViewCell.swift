@@ -27,6 +27,15 @@ class ShiftTableViewCell: UITableViewCell {
   }
 
   private func updateCellContent() {
+    if shift.currentUserAssigned.boolValue {
+      countLabel.backgroundColor = Theme.youreInColor()
+    }
+    else if shift.volunteersCount >= shift.volunteersNeeded {
+      countLabel.backgroundColor = Theme.optOutColor()
+    }
+    else {
+      countLabel.backgroundColor = Theme.availableColor()
+    }
     countLabel.text = shiftPresenter.volunteersOutOfLabelText()
     timeLabel.text = shiftPresenter.timespanLabelText()
   }
