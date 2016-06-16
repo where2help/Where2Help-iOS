@@ -97,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sol-8n-lL5">
-                                <rect key="frame" x="0.0" y="20" width="600" height="780"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="600"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mo. 20. Jun 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tl-oj-3ZJ">
                                         <rect key="frame" x="80" y="119" width="500" height="17"/>
@@ -255,7 +255,6 @@
                         <constraints>
                             <constraint firstItem="Sol-8n-lL5" firstAttribute="leading" secondItem="aH3-oJ-NWh" secondAttribute="leading" id="1ds-Yt-ivM"/>
                             <constraint firstItem="Sol-8n-lL5" firstAttribute="top" secondItem="Y8N-aJ-XiJ" secondAttribute="bottom" id="APk-2B-xds"/>
-                            <constraint firstItem="HEe-1R-Jya" firstAttribute="top" secondItem="Sol-8n-lL5" secondAttribute="bottom" id="aMr-6j-rPJ"/>
                             <constraint firstAttribute="trailing" secondItem="Sol-8n-lL5" secondAttribute="trailing" id="mvw-NP-Crh"/>
                         </constraints>
                     </view>
@@ -541,22 +540,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-90-QV1">
-                                <rect key="frame" x="222" y="540" width="157" height="30"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <state key="normal" title="Forgot your password?"/>
-                                <connections>
-                                    <segue destination="bG2-c0-0Gr" kind="show" id="AbR-Fk-frz"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In To Your Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifC-Nt-NQu">
                                 <rect key="frame" x="191" y="53" width="218" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ht6-1A-HxU">
-                                <rect key="frame" x="20" y="465" width="560" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ht6-1A-HxU">
+                                <rect key="frame" x="20" y="469" width="560" height="60"/>
                                 <color key="backgroundColor" red="0.18431372549019609" green="0.30980392156862746" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="PFc-fl-3se"/>
@@ -568,16 +559,20 @@
                                     <action selector="signInButtonTapped:" destination="dEf-XA-Vdu" eventType="touchUpInside" id="YEt-5s-2G7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ERROR LABEL" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ba-k9-lN7">
-                                <rect key="frame" x="263" y="289" width="75" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR LABEL" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ba-k9-lN7">
+                                <rect key="frame" x="263" y="289" width="75" height="13.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XVc-LA-3BP">
-                                <rect key="frame" x="282" y="364" width="37" height="37"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-90-QV1">
+                                <rect key="frame" x="240" y="544" width="120" height="26"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <state key="normal" title="Forgot your password?"/>
+                                <connections>
+                                    <segue destination="bG2-c0-0Gr" kind="show" id="AbR-Fk-frz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -592,11 +587,8 @@
                             <constraint firstItem="7an-n5-unf" firstAttribute="leading" secondItem="SJ3-Pn-cs7" secondAttribute="leading" id="QjK-fs-Eod"/>
                             <constraint firstItem="0ba-k9-lN7" firstAttribute="top" secondItem="7an-n5-unf" secondAttribute="bottom" constant="31" id="SmM-9g-i26"/>
                             <constraint firstItem="BeJ-90-QV1" firstAttribute="centerX" secondItem="CXy-c7-ezv" secondAttribute="centerX" id="U9x-9S-YHX"/>
-                            <constraint firstItem="XVc-LA-3BP" firstAttribute="width" secondItem="CXy-c7-ezv" secondAttribute="width" id="VVV-hy-X08"/>
                             <constraint firstItem="7an-n5-unf" firstAttribute="trailing" secondItem="9Vy-L5-yhy" secondAttribute="trailing" id="WZM-2B-OjY"/>
                             <constraint firstItem="SJ3-Pn-cs7" firstAttribute="top" secondItem="ifC-Nt-NQu" secondAttribute="bottom" constant="30" id="cZN-C1-cQo"/>
-                            <constraint firstItem="XVc-LA-3BP" firstAttribute="centerX" secondItem="ht6-1A-HxU" secondAttribute="centerX" id="eG2-Bl-Z0t"/>
-                            <constraint firstItem="XVc-LA-3BP" firstAttribute="height" secondItem="CXy-c7-ezv" secondAttribute="height" id="gd7-eq-eej"/>
                             <constraint firstItem="0ba-k9-lN7" firstAttribute="centerX" secondItem="BeJ-90-QV1" secondAttribute="centerX" id="hpK-Jj-dse"/>
                             <constraint firstItem="ifC-Nt-NQu" firstAttribute="top" secondItem="anr-LR-t8R" secondAttribute="bottom" constant="33" id="psg-lZ-zU2"/>
                             <constraint firstItem="pn5-vB-gCm" firstAttribute="top" secondItem="9Vy-L5-yhy" secondAttribute="bottom" constant="30" id="qGY-WF-ryY"/>
@@ -612,7 +604,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="XVc-LA-3BP" id="R9p-dC-M1B"/>
                         <outlet property="emailTextField" destination="9Vy-L5-yhy" id="lt7-k8-hED"/>
                         <outlet property="errorLabel" destination="0ba-k9-lN7" id="LE7-7G-hro"/>
                         <outlet property="passwordTextField" destination="7an-n5-unf" id="MmL-nA-8Lv"/>
@@ -675,12 +666,9 @@
                                     <constraint firstAttribute="height" constant="50" id="URU-oh-46W"/>
                                 </constraints>
                             </imageView>
-                            <activityIndicatorView hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="MQi-js-X6d">
+                            <activityIndicatorView clearsContextBeforeDrawing="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="MQi-js-X6d">
                                 <rect key="frame" x="282" y="281" width="37" height="37"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="37" id="KXi-9y-8sv"/>
-                                </constraints>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -688,15 +676,15 @@
                             <constraint firstItem="jGY-fN-Pqm" firstAttribute="top" secondItem="Fq8-xy-cPp" secondAttribute="bottom" constant="40" id="0AM-g3-H7u"/>
                             <constraint firstItem="MQi-js-X6d" firstAttribute="centerX" secondItem="Kmg-Hl-uQI" secondAttribute="centerX" id="0V1-4v-aDw"/>
                             <constraint firstItem="Fq8-xy-cPp" firstAttribute="centerX" secondItem="Kmg-Hl-uQI" secondAttribute="centerX" id="6hu-i3-1nj"/>
+                            <constraint firstItem="MQi-js-X6d" firstAttribute="height" secondItem="Kmg-Hl-uQI" secondAttribute="height" id="D37-9w-zkN"/>
                             <constraint firstItem="BfS-sp-Fuy" firstAttribute="trailing" secondItem="Kmg-Hl-uQI" secondAttribute="trailingMargin" id="LLk-bE-eAy"/>
                             <constraint firstItem="MQi-js-X6d" firstAttribute="centerY" secondItem="Kmg-Hl-uQI" secondAttribute="centerY" id="Ls3-NH-fNl"/>
-                            <constraint firstItem="MQi-js-X6d" firstAttribute="width" secondItem="Kmg-Hl-uQI" secondAttribute="width" id="N0V-ia-cDL"/>
                             <constraint firstItem="BfS-sp-Fuy" firstAttribute="leading" secondItem="Kmg-Hl-uQI" secondAttribute="leadingMargin" id="PCA-K5-it2"/>
                             <constraint firstItem="Fb2-uh-BQE" firstAttribute="trailing" secondItem="Kmg-Hl-uQI" secondAttribute="trailingMargin" id="SSL-pd-iK2"/>
                             <constraint firstItem="Fb2-uh-BQE" firstAttribute="leading" secondItem="Kmg-Hl-uQI" secondAttribute="leadingMargin" id="VK2-zM-eOb"/>
                             <constraint firstItem="jGY-fN-Pqm" firstAttribute="centerX" secondItem="Kmg-Hl-uQI" secondAttribute="centerX" id="WaS-EM-j0K"/>
                             <constraint firstItem="bT9-kF-StI" firstAttribute="top" secondItem="Fb2-uh-BQE" secondAttribute="bottom" constant="25" id="XZf-QA-7aL"/>
-                            <constraint firstItem="MQi-js-X6d" firstAttribute="height" secondItem="Kmg-Hl-uQI" secondAttribute="height" id="ZZp-hQ-gOI"/>
+                            <constraint firstItem="MQi-js-X6d" firstAttribute="width" secondItem="Kmg-Hl-uQI" secondAttribute="width" id="Zvq-5b-RlS"/>
                             <constraint firstItem="Fb2-uh-BQE" firstAttribute="top" secondItem="BfS-sp-Fuy" secondAttribute="bottom" constant="20" id="tUj-6v-4UO"/>
                             <constraint firstItem="Fq8-xy-cPp" firstAttribute="top" secondItem="5jX-su-o8c" secondAttribute="bottom" constant="60" id="uuh-hu-0DI"/>
                         </constraints>
@@ -837,6 +825,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="r5X-To-u0L"/>
-        <segue reference="zAM-wr-6xO"/>
+        <segue reference="BZP-l7-FgB"/>
     </inferredMetricsTieBreakers>
 </document>
