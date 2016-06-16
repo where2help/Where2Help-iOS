@@ -33,6 +33,7 @@ class ShiftDetailViewController: UIViewController, ShiftHandler {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     interactor.setup(self, event: event, shift: shift)
+    shift.currentUserAssigned.boolValue ? imInButton.optedIn() : imInButton.optedOut()
   }
 
   // MARK: - ShiftHandler
