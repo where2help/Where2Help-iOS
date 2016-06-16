@@ -44,6 +44,8 @@
 		93F55B311CB93C1700E7EF4B /* shifts-past.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F55B2E1CB93C1700E7EF4B /* shifts-past.json */; };
 		F89843B91CEDFD2E009B154C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89843B81CEDFD2E009B154C /* SignInViewController.swift */; };
 		F89843BB1CEE0BEE009B154C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89843BA1CEE0BEE009B154C /* Constants.swift */; };
+		F8A063CB1D12DE18009449F7 /* OptInAndOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A063CA1D12DE18009449F7 /* OptInAndOutButton.swift */; };
+		F8A063CE1D12E032009449F7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A063CD1D12E032009449F7 /* Theme.swift */; };
 		F8A631FA1D099E0E000AB8D3 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A631F91D099E0E000AB8D3 /* LandingPageViewController.swift */; };
 		F8A631FC1D099F45000AB8D3 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A631FB1D099F45000AB8D3 /* UserManager.swift */; };
 		F8AA2CFD1CF7451500F108EE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA2CFC1CF7451500F108EE /* APIClient.swift */; };
@@ -117,6 +119,8 @@
 		EF170BDA0D0798BAC39ECC4C /* Pods-Where2HelpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where2HelpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Where2HelpTests/Pods-Where2HelpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F89843B81CEDFD2E009B154C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = Controllers/SignInViewController.swift; sourceTree = "<group>"; };
 		F89843BA1CEE0BEE009B154C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8A063CA1D12DE18009449F7 /* OptInAndOutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptInAndOutButton.swift; sourceTree = "<group>"; };
+		F8A063CD1D12E032009449F7 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F8A631F91D099E0E000AB8D3 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandingPageViewController.swift; path = Controllers/LandingPageViewController.swift; sourceTree = "<group>"; };
 		F8A631FB1D099F45000AB8D3 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserManager.swift; path = Models/UserManager.swift; sourceTree = "<group>"; };
 		F8AA2CFC1CF7451500F108EE /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Models/APIClient.swift; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 				930230A61CAD6FEE00AFF791 /* Controllers */,
 				93A37CBC1CAD8480006089D1 /* Ext */,
 				930230A71CAD703900AFF791 /* Models */,
+				F8A063C91D12DE07009449F7 /* Views */,
+				F8A063CC1D12E02B009449F7 /* Helpers */,
 				930230AB1CAD774F00AFF791 /* Resources */,
 				9390ABBA1CA47516006F7572 /* AppDelegate.swift */,
 				9390ABC01CA47516006F7572 /* Main.storyboard */,
@@ -339,6 +345,22 @@
 				62E9BD6177299F152336977B /* Pods_Where2HelpUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8A063C91D12DE07009449F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8A063CA1D12DE18009449F7 /* OptInAndOutButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8A063CC1D12E02B009449F7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8A063CD1D12E032009449F7 /* Theme.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -631,7 +653,9 @@
 				93F55B1C1CB8529900E7EF4B /* ShiftHandler.swift in Sources */,
 				93F55B131CB7EF3000E7EF4B /* EventPresenter.swift in Sources */,
 				93F55B251CB90B1700E7EF4B /* MapOperation.swift in Sources */,
+				F8A063CE1D12E032009449F7 /* Theme.swift in Sources */,
 				93F55B1E1CB903B200E7EF4B /* EventGeo.swift in Sources */,
+				F8A063CB1D12DE18009449F7 /* OptInAndOutButton.swift in Sources */,
 				93F55B1A1CB8524D00E7EF4B /* ShiftDetailInteractor.swift in Sources */,
 				93F55B271CB90BA900E7EF4B /* Locatable.swift in Sources */,
 				93A37CBF1CAD8495006089D1 /* NSDate.swift in Sources */,
