@@ -174,7 +174,6 @@
 			children = (
 				93F55B231CB90AF800E7EF4B /* Map */,
 				930230A51CAD6FD800AFF791 /* Event */,
-				93A43F251CA5516E004D1774 /* Profile */,
 			);
 			name = Concepts;
 			path = ..;
@@ -306,14 +305,6 @@
 				93535A6C1CB6639B0073BDB3 /* ShiftTableViewCell.xib */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		93A43F251CA5516E004D1774 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Profile;
-			path = Where2Help;
 			sourceTree = "<group>";
 		};
 		93F55B181CB8522F00E7EF4B /* Shift */ = {
