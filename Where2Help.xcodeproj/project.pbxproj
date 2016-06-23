@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21DEC02A1D1C1E7900EA7470 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEC0291D1C1E7900EA7470 /* ProfileTableViewController.swift */; };
 		3D201E59C2B6B5322EAC1431 /* Pods_Where2Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A90A37481A35B9E4479161C /* Pods_Where2Help.framework */; };
 		5B945AA722F2941ACCC4CC7C /* Pods_Where2HelpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E9BD6177299F152336977B /* Pods_Where2HelpUITests.framework */; };
 		64122E6A4969B7D0FAA761F3 /* Pods_Where2HelpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F078BAF1E3AC5F8F819AE78 /* Pods_Where2HelpTests.framework */; };
@@ -27,7 +28,6 @@
 		9390ABDD1CA47517006F7572 /* Where2HelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9390ABDC1CA47517006F7572 /* Where2HelpUITests.swift */; };
 		93A37CBF1CAD8495006089D1 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A37CBE1CAD8495006089D1 /* NSDate.swift */; };
 		93A37D011CADC918006089D1 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A37CFF1CADC918006089D1 /* EventCollectionViewCell.swift */; };
-		93A43F241CA55093004D1774 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A43F231CA55093004D1774 /* ProfileTableViewController.swift */; };
 		93F55B111CB7E42E00E7EF4B /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F55B0F1CB7E42E00E7EF4B /* EventCollectionViewCell.xib */; };
 		93F55B131CB7EF3000E7EF4B /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F55B121CB7EF2F00E7EF4B /* EventPresenter.swift */; };
 		93F55B151CB7F37B00E7EF4B /* ShiftPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F55B141CB7F37B00E7EF4B /* ShiftPresenter.swift */; };
@@ -70,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21DEC0291D1C1E7900EA7470 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = Controllers/ProfileTableViewController.swift; sourceTree = "<group>"; };
 		5C4823273F8BC8802CC8A9B5 /* Pods-Where2Help.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where2Help.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Where2Help/Pods-Where2Help.debug.xcconfig"; sourceTree = "<group>"; };
 		62E9BD6177299F152336977B /* Pods_Where2HelpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Where2HelpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A90A37481A35B9E4479161C /* Pods_Where2Help.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Where2Help.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +100,6 @@
 		9390ABDE1CA47517006F7572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A37CBE1CAD8495006089D1 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		93A37CFF1CADC918006089D1 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
-		93A43F231CA55093004D1774 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		93F55B0F1CB7E42E00E7EF4B /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
 		93F55B121CB7EF2F00E7EF4B /* EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
 		93F55B141CB7F37B00E7EF4B /* ShiftPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftPresenter.swift; sourceTree = "<group>"; };
@@ -200,6 +200,7 @@
 		930230A61CAD6FEE00AFF791 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				21DEC0291D1C1E7900EA7470 /* ProfileTableViewController.swift */,
 				93F55B161CB8522100E7EF4B /* ShiftDetailViewController.swift */,
 				93535A6F1CB669690073BDB3 /* EventsViewController.swift */,
 				F89843B81CEDFD2E009B154C /* SignInViewController.swift */,
@@ -310,7 +311,6 @@
 		93A43F251CA5516E004D1774 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				93A43F231CA55093004D1774 /* ProfileTableViewController.swift */,
 			);
 			name = Profile;
 			path = Where2Help;
@@ -646,10 +646,10 @@
 				F8AA2CFD1CF7451500F108EE /* APIClient.swift in Sources */,
 				93535A761CB67FD90073BDB3 /* EventCalendar.swift in Sources */,
 				93535A741CB66DE70073BDB3 /* EventsHandler.swift in Sources */,
-				93A43F241CA55093004D1774 /* ProfileTableViewController.swift in Sources */,
 				930230B11CAD7DA700AFF791 /* EventMapper.swift in Sources */,
 				F8A631FA1D099E0E000AB8D3 /* LandingPageViewController.swift in Sources */,
 				F8A631FC1D099F45000AB8D3 /* UserManager.swift in Sources */,
+				21DEC02A1D1C1E7900EA7470 /* ProfileTableViewController.swift in Sources */,
 				93F55B1C1CB8529900E7EF4B /* ShiftHandler.swift in Sources */,
 				93F55B131CB7EF3000E7EF4B /* EventPresenter.swift in Sources */,
 				93F55B251CB90B1700E7EF4B /* MapOperation.swift in Sources */,
