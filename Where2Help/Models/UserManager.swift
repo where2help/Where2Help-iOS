@@ -38,6 +38,20 @@ class UserManager {
     return [:]
   }
 
+  class func logOut() {
+    do {
+      if let user = currentUser, email = user.email {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.removeObjectForKey(email)
+        try Locksmith.deleteDataForUserAccount(email)
+        Static.currentUser = nil
+      }
+    }
+    catch {
+      print("Could not log out user")
+    }
+  }
+
   private class func persistUser(user: User) {
     do {
       if let email: String = user.email, password: String = user.password {

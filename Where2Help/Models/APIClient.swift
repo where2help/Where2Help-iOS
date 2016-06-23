@@ -47,6 +47,21 @@ struct APIClient {
     print("Signing in with email: \(email) password: \(password)")
   }
 
+  static func logout(user: User, success:() -> Void, failure:(message: String) -> Void) {
+    let headers = headerForUser(user)
+    Alamofire.request(.DELETE, "\(Constants.Where2HelpAPIUrl)/users/logout", headers: headers)
+      .validate(statusCode: 200..<300)
+      .responseJSON { response in
+        switch response.result {
+        case .Success:
+          UserManager.logOut()
+          success()
+        case .Failure(_):
+          failure(message: "Logout Failure")
+        }
+    }
+  }
+
   static func optIn(user: User, shift: Shift, success:(json: NSArray) -> Void, failure:(message: String) -> Void) {
     let headers = headerForUser(user)
     let params = [
