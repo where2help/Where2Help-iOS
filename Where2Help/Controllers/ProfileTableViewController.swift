@@ -27,6 +27,20 @@ class ProfileTableViewController: UITableViewController {
     // Dispose of any resources that can be recreated.
   }
 
+  // MARK: - Table view delegate
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    if indexPath.section == 1 {
+      if let user = UserManager.currentUser {
+        APIClient.logout(user, success: {
+          self.performSegueWithIdentifier("LogOut", sender: self)
+          }, failure: { (message) in
+            print(message)
+        })
+      }
+    }
+  }
+
   // MARK: - Table view data source
   //
   //    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
