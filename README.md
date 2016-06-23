@@ -1,17 +1,17 @@
 # Where2Help iOS Client
 
-# Development
+## Development
 
 Install bundler
 
-  $ gem install bundler
+    $ gem install bundler
 
 Install bundled gems
 
-  $ bundle install
+    $ bundle install
 
 Install CocoaPods
 
-  $ pod install
+    $ pod install
 
 Start up Xcode
