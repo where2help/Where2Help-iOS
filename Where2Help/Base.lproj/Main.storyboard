@@ -306,6 +306,9 @@
                                             </textField>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IZM-8t-V1r">
                                                 <rect key="frame" x="531" y="569" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="termsSwitchValueChanged:" destination="dpj-ff-Dlt" eventType="valueChanged" id="Jlb-Xs-cf3"/>
+                                                </connections>
                                             </switch>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6jQ-Qh-aP6">
                                                 <rect key="frame" x="20" y="515" width="560" height="30"/>
@@ -389,6 +392,7 @@
                                                 <color key="tintColor" red="0.98039215690000003" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Create My Account"/>
                                                 <connections>
+                                                    <action selector="signUpButtonTapped:" destination="dpj-ff-Dlt" eventType="touchUpInside" id="R2h-2z-Vhn"/>
                                                     <segue destination="49e-Tb-3d3" kind="show" id="MgO-2a-OAv"/>
                                                 </connections>
                                             </button>
@@ -458,6 +462,15 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="700"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="rss-IO-Y4A" id="N38-Nd-WAG"/>
+                        <outlet property="firstNameTextField" destination="QQH-WU-4hM" id="jbV-5f-KVE"/>
+                        <outlet property="lastNameTextField" destination="vra-53-spy" id="2oe-sa-9ff"/>
+                        <outlet property="passwordConfirmTextField" destination="7mB-ia-hX5" id="3zW-wc-2Jb"/>
+                        <outlet property="passwordTextField" destination="bDA-k6-Kj7" id="oP0-hX-Tvf"/>
+                        <outlet property="phoneNumberTextField" destination="6jQ-Qh-aP6" id="TW7-Ln-h3C"/>
+                        <outlet property="signUpButton" destination="Wau-aZ-j4s" id="IMG-iK-MaR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVo-EO-iqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

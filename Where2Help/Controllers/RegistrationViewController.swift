@@ -11,6 +11,16 @@ import UIKit
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var emailTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
-  @IBOutlet weak var errorLabel: UILabel!
-  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+  @IBOutlet weak var passwordConfirmTextField: UITextField!
+  @IBOutlet weak var firstNameTextField: UITextField!
+  @IBOutlet weak var lastNameTextField: UITextField!
+  @IBOutlet weak var phoneNumberTextField: UITextField!
+  @IBOutlet weak var signUpButton: UIButton!
+
+
+  @IBAction func signUpButtonTapped(sender: UIButton) {
+  }
+
+  @IBAction func termsSwitchValueChanged(sender: UISwitch) {
+  }
 }
