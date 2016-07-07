@@ -21,14 +21,19 @@ class ShiftDetailInteractor {
   }
 
   func toggleOptIn() {
-    if shift.currentUserAssigned.boolValue {
-    }
-    else {
-      if let user = UserManager.currentUser {
-        APIClient.optIn(user, shift: self.shift, success: { (json) in
-          print("worked")
+    if let user = UserManager.currentUser {
+      if shift.currentUserAssigned.boolValue {
+        APIClient.optOut(user, shift: self.shift, success: { (json) in
+          print("Opted out")
         }) { (message) in
-          print("bla")
+          print("No good")
+        }
+      }
+      else {
+        APIClient.optIn(user, shift: self.shift, success: { (json) in
+          print("Opted In")
+        }) { (message) in
+          print("No good")
         }
       }
     }
