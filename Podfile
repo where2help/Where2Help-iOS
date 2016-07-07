@@ -8,6 +8,7 @@ target 'Where2Help' do
   pod 'Alamofire', '3.2.1'
   pod 'PromiseKit', "~> 3.0"
   pod 'Locksmith', "~> 2.0.8"
+  pod 'IQKeyboardManagerSwift', '~> 4.0'
 end
 
 target 'Where2HelpTests' do
