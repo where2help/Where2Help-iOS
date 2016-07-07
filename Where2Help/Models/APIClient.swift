@@ -10,6 +10,27 @@ import Foundation
 import Alamofire
 
 struct APIClient {
+
+  static func signUp(email: String, password: String, passwordConfirm: String, firstName: String, lastName: String, phoneNumber: String, success:(message: String) -> Void, failure:(message: String) -> Void) {
+    let params = [
+      "email": email,
+      "password": password,
+      "password_confirmation": passwordConfirm,
+      "first_name": firstName,
+      "last_name": lastName
+    ]
+    Alamofire.request(.POST, "\(Constants.Where2HelpAPIUrl)/users/register", parameters: params)
+      .validate(statusCode: 200..<300)
+      .responseJSON { response in
+        switch response.result {
+        case .Success:
+          success(message: "We've sent you an email with a confirmation link!")
+        case .Failure(_):
+          failure(message: "We couldn't sign you up. Make sure you've filled in the required fields or try again later.")
+        }
+    }
+  }
+
   static func login(email: String, password: String, success:(user: User) -> Void, failure:(message: String) -> Void) {
     let params = [
       "email": email,
