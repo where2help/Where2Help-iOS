@@ -9,6 +9,7 @@ target 'Where2Help' do
   pod 'PromiseKit', "~> 3.0"
   pod 'Locksmith', "~> 2.0.8"
   pod 'IQKeyboardManagerSwift', '~> 4.0'
+  pod 'NetworkActivityIndicatorManager', '~> 0.3'
 end
 
 target 'Where2HelpTests' do
