@@ -9,38 +9,37 @@
 import Foundation
 
 class ShiftDetailInteractor {
-    var handler: ShiftHandler!
-    var shift: Shift!
-    var event: Event!
-    
-    func setup(handler: ShiftHandler, event: Event, shift: Shift) {
-        self.handler = handler
-        self.shift = shift
-        self.event = event
-        loadShift()
+  var handler: ShiftHandler!
+  var shift: Shift!
+  var event: Event!
+
+  func setup(handler: ShiftHandler, event: Event, shift: Shift) {
+    self.handler = handler
+    self.shift = shift
+    self.event = event
+    loadShift()
+  }
+
+  func toggleOptIn() {
+    if shift.currentUserAssigned.boolValue {
     }
-    
-    func toggleOptIn() {
-      if shift.currentUserAssigned.boolValue {
-        if let user = UserManager.currentUser {
-          APIClient.optIn(user, shift: self.shift, success: { (json) in
-            print("worked")
-            }) { (message) in
-              print("bla")
-          }
+    else {
+      if let user = UserManager.currentUser {
+        APIClient.optIn(user, shift: self.shift, success: { (json) in
+          print("worked")
+        }) { (message) in
+          print("bla")
         }
       }
-      else {
+    }
+  }
 
-      }
-    }
-    
-    private func loadShift() {
-        let ePres = EventPresenter(event: event)
-        let sPres = ShiftPresenter(shift: shift)
-        handler.handleNewEvent(ePres)
-        handler.handleNewShift(sPres)
-        let geo = EventGeo(event: event)
-        handler.handleGeo(geo)
-    }
+  private func loadShift() {
+    let ePres = EventPresenter(event: event)
+    let sPres = ShiftPresenter(shift: shift)
+    handler.handleNewEvent(ePres)
+    handler.handleNewShift(sPres)
+    let geo = EventGeo(event: event)
+    handler.handleGeo(geo)
+  }
 }
