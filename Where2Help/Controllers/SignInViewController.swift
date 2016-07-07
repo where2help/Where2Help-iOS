@@ -12,7 +12,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var emailTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
   @IBOutlet weak var errorLabel: UILabel!
-  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
@@ -34,18 +33,14 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.showError("Please make sure to fill in your email and password!")
         return
       }
-      activityIndicator.startAnimating()
       APIClient.login(emailAddress, password: password,
         success: { (user: User) -> Void in
-          self.activityIndicator.stopAnimating()
           self.performSegueWithIdentifier("SignInSuccessful", sender: self)
         },
         failure: { (message: String) -> Void in
-          self.activityIndicator.stopAnimating()
           self.showError(message)
         }
       )
-      activityIndicator.startAnimating()
     }
   }
 

@@ -626,19 +626,12 @@
                                     <segue destination="bG2-c0-0Gr" kind="show" id="AbR-Fk-frz"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gO2-Ce-Jaw">
-                                <rect key="frame" x="282" y="281" width="37" height="37"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="7an-n5-unf" firstAttribute="top" secondItem="pn5-vB-gCm" secondAttribute="bottom" constant="10" id="4QW-92-Y6P"/>
                             <constraint firstItem="ht6-1A-HxU" firstAttribute="leading" secondItem="SJ3-Pn-cs7" secondAttribute="leading" id="4R8-l1-WRZ"/>
                             <constraint firstItem="pn5-vB-gCm" firstAttribute="leading" secondItem="SJ3-Pn-cs7" secondAttribute="leading" id="4mT-vH-ymv"/>
-                            <constraint firstItem="gO2-Ce-Jaw" firstAttribute="top" secondItem="CXy-c7-ezv" secondAttribute="topMargin" id="5zj-Ec-Hu0"/>
-                            <constraint firstItem="gO2-Ce-Jaw" firstAttribute="height" secondItem="CXy-c7-ezv" secondAttribute="height" id="FTu-F9-qeS"/>
-                            <constraint firstItem="gO2-Ce-Jaw" firstAttribute="width" secondItem="CXy-c7-ezv" secondAttribute="width" id="G9e-3L-wpx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Vy-L5-yhy" secondAttribute="trailing" id="JVz-TG-HY3"/>
                             <constraint firstItem="9Vy-L5-yhy" firstAttribute="top" secondItem="SJ3-Pn-cs7" secondAttribute="bottom" constant="10" id="Jj6-F3-g5b"/>
                             <constraint firstItem="SJ3-Pn-cs7" firstAttribute="leading" secondItem="CXy-c7-ezv" secondAttribute="leadingMargin" id="Kpo-2g-HDq"/>
@@ -656,7 +649,6 @@
                             <constraint firstItem="9Vy-L5-yhy" firstAttribute="leading" secondItem="SJ3-Pn-cs7" secondAttribute="leading" id="uq4-Cx-sIe"/>
                             <constraint firstItem="BeJ-90-QV1" firstAttribute="top" secondItem="ht6-1A-HxU" secondAttribute="bottom" constant="15" id="vkp-XB-JHc"/>
                             <constraint firstItem="ifC-Nt-NQu" firstAttribute="centerX" secondItem="CXy-c7-ezv" secondAttribute="centerX" id="xHg-e5-Gkr"/>
-                            <constraint firstItem="gO2-Ce-Jaw" firstAttribute="leading" secondItem="CXy-c7-ezv" secondAttribute="leadingMargin" constant="262" id="xbL-lI-XsG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -665,7 +657,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="gO2-Ce-Jaw" id="KPj-WA-DUW"/>
                         <outlet property="emailTextField" destination="9Vy-L5-yhy" id="lt7-k8-hED"/>
                         <outlet property="errorLabel" destination="0ba-k9-lN7" id="LE7-7G-hro"/>
                         <outlet property="passwordTextField" destination="7an-n5-unf" id="MmL-nA-8Lv"/>
@@ -728,31 +719,22 @@
                                     <constraint firstAttribute="height" constant="50" id="URU-oh-46W"/>
                                 </constraints>
                             </imageView>
-                            <activityIndicatorView clearsContextBeforeDrawing="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="MQi-js-X6d">
-                                <rect key="frame" x="282" y="281" width="600" height="700"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jGY-fN-Pqm" firstAttribute="top" secondItem="Fq8-xy-cPp" secondAttribute="bottom" constant="40" id="0AM-g3-H7u"/>
-                            <constraint firstItem="MQi-js-X6d" firstAttribute="centerX" secondItem="Kmg-Hl-uQI" secondAttribute="centerX" id="0V1-4v-aDw"/>
                             <constraint firstItem="Fq8-xy-cPp" firstAttribute="centerX" secondItem="Kmg-Hl-uQI" secondAttribute="centerX" id="6hu-i3-1nj"/>
-                            <constraint firstItem="MQi-js-X6d" firstAttribute="height" secondItem="Kmg-Hl-uQI" secondAttribute="height" id="D37-9w-zkN"/>
                             <constraint firstItem="BfS-sp-Fuy" firstAttribute="trailing" secondItem="Kmg-Hl-uQI" secondAttribute="trailingMargin" id="LLk-bE-eAy"/>
-                            <constraint firstItem="MQi-js-X6d" firstAttribute="centerY" secondItem="Kmg-Hl-uQI" secondAttribute="centerY" id="Ls3-NH-fNl"/>
                             <constraint firstItem="BfS-sp-Fuy" firstAttribute="leading" secondItem="Kmg-Hl-uQI" secondAttribute="leadingMargin" id="PCA-K5-it2"/>
                             <constraint firstItem="Fb2-uh-BQE" firstAttribute="trailing" secondItem="Kmg-Hl-uQI" secondAttribute="trailingMargin" id="SSL-pd-iK2"/>
                             <constraint firstItem="Fb2-uh-BQE" firstAttribute="leading" secondItem="Kmg-Hl-uQI" secondAttribute="leadingMargin" id="VK2-zM-eOb"/>
                             <constraint firstItem="jGY-fN-Pqm" firstAttribute="centerX" secondItem="Kmg-Hl-uQI" secondAttribute="centerX" id="WaS-EM-j0K"/>
                             <constraint firstItem="bT9-kF-StI" firstAttribute="top" secondItem="Fb2-uh-BQE" secondAttribute="bottom" constant="25" id="XZf-QA-7aL"/>
-                            <constraint firstItem="MQi-js-X6d" firstAttribute="width" secondItem="Kmg-Hl-uQI" secondAttribute="width" id="Zvq-5b-RlS"/>
                             <constraint firstItem="Fb2-uh-BQE" firstAttribute="top" secondItem="BfS-sp-Fuy" secondAttribute="bottom" constant="20" id="tUj-6v-4UO"/>
                             <constraint firstItem="Fq8-xy-cPp" firstAttribute="top" secondItem="5jX-su-o8c" secondAttribute="bottom" constant="60" id="uuh-hu-0DI"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="MQi-js-X6d" id="7B5-pQ-H4C"/>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="UserPersistedAndSignedIn" id="r5X-To-u0L"/>
                     </connections>
                 </viewController>
