@@ -8,6 +8,8 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import Alamofire
+import NetworkActivityIndicatorManager 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     IQKeyboardManager.sharedManager().enable = true
 
+    let manager = NetworkActivityIndicatorManager.sharedManager
+    manager.registerForIncrementNotification(Notifications.Task.DidResume)
+    manager.registerForDecrementNotification(Notifications.Task.DidSuspend)
+    manager.registerForDecrementNotification(Notifications.Task.DidComplete)
     return true
   }
 
