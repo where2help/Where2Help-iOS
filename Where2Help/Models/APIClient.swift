@@ -83,7 +83,7 @@ struct APIClient {
     }
   }
 
-  static func optIn(user: User, shift: Shift, success:(json: NSArray) -> Void, failure:(message: String) -> Void) {
+  static func optIn(user: User, shift: Shift, success:(json: AnyObject) -> Void, failure:(message: String) -> Void) {
     let headers = headerForUser(user)
     let params = [
       "shift_id": shift.ID
@@ -95,7 +95,7 @@ struct APIClient {
           updateTokenForUser(user, token: token as! String)
           switch response.result {
           case .Success:
-            if let JSON : NSArray = response.result.value as? NSArray {
+            if let JSON = response.result.value {
               success(json: JSON)
             }
           case .Failure(_):
@@ -104,6 +104,29 @@ struct APIClient {
         }
     }
   }
+
+  static func optOut(user: User, shift: Shift, success:(json: AnyObject) -> Void, failure:(message: String) -> Void) {
+    let headers = headerForUser(user)
+    let params = [
+      "shift_id": shift.ID
+    ]
+    Alamofire.request(.POST, "\(Constants.Where2HelpAPIUrl)/shifts/opt_out", headers: headers, parameters: params)
+      .validate(statusCode: 200..<300)
+      .responseJSON { response in
+        if let token = response.response?.allHeaderFields["TOKEN"] {
+          updateTokenForUser(user, token: token as! String)
+          switch response.result {
+          case .Success:
+            if let JSON = response.result.value {
+              success(json: JSON)
+            }
+          case .Failure(_):
+            failure(message: "BAD")
+          }
+        }
+    }
+  }
+
   static func getEvents(user: User, success:(json: NSArray) -> Void, failure:(message: String) -> Void) {
     let headers = headerForUser(user)
     let params = [
