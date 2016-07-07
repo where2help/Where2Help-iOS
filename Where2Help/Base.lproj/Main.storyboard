@@ -306,7 +306,7 @@
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7mB-ia-hX5">
                                                 <rect key="frame" x="20" y="243" width="560" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQH-WU-4hM">
@@ -316,7 +316,7 @@
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vra-53-spy">
                                                 <rect key="frame" x="20" y="424" width="560" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6jQ-Qh-aP6">
@@ -469,7 +469,6 @@
                         <outlet property="passwordTextField" destination="bDA-k6-Kj7" id="oP0-hX-Tvf"/>
                         <outlet property="phoneNumberTextField" destination="6jQ-Qh-aP6" id="TW7-Ln-h3C"/>
                         <outlet property="signUpButton" destination="Wau-aZ-j4s" id="IMG-iK-MaR"/>
-                        <segue destination="49e-Tb-3d3" kind="show" identifier="SignUpSuccessful" id="pGN-R4-cEf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVo-EO-iqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
