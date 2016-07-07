@@ -20,12 +20,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   }
 
   func textFieldShouldReturn(textField: UITextField) -> Bool {
-    if textField == emailTextField {
-      passwordTextField.becomeFirstResponder()
-    } else {
-      textField.resignFirstResponder()
-      signIn()
-    }
+    textField.resignFirstResponder()
     return true
   }
 
