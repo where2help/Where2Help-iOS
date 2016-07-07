@@ -39,7 +39,9 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
       APIClient.signUp(email, password: password, passwordConfirm: passwordConfirm, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber,
          success: { (message) in
           let alert = UIAlertController(title: "Sign Up Success!", message: message, preferredStyle: UIAlertControllerStyle.Alert)
-          alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+          alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (action) in
+            self.performSegueWithIdentifier("SignUpSuccessful", sender: self)
+          }))
           self.presentViewController(alert, animated: true, completion: nil)
         },
          failure: { (message) in
