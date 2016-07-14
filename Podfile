@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '8.0'
+platform :ios, '9.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
 
@@ -10,6 +10,7 @@ target 'Where2Help' do
   pod 'Locksmith', "~> 2.0.8"
   pod 'IQKeyboardManagerSwift', '~> 4.0'
   pod 'NetworkActivityIndicatorManager', '~> 0.3'
+  pod 'GTNotification', '~> 1.4'
 end
 
 target 'Where2HelpTests' do
