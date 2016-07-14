@@ -21,6 +21,7 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    TopNotification.showSuccess("Loading events...")
     setupEventCell()
     setupDetailController()
     //        let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
