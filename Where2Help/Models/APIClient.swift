@@ -102,7 +102,7 @@ struct APIClient {
               success(json: JSON)
             }
           case .Failure(let error):
-            failure(message: error.localizedDescription
+            failure(message: error.localizedDescription)
           }
         }
     }
