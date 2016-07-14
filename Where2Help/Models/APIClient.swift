@@ -50,7 +50,7 @@ struct APIClient {
               success(user: user)
             }
           }
-        case .Failure(_):
+        case .Failure(let error):
           if let statusCode = response.response?.statusCode {
             switch statusCode {
             case 404:
@@ -62,6 +62,9 @@ struct APIClient {
             default:
               failure(message: "Could not sign you in right now. Please try again later")
             }
+          }
+          else {
+            failure(message: error.localizedDescription)
           }
         }
     }
@@ -77,8 +80,8 @@ struct APIClient {
         case .Success:
           UserManager.logOut()
           success()
-        case .Failure(_):
-          failure(message: "Logout Failure")
+        case .Failure(let error):
+          failure(message: error.localizedDescription)
         }
     }
   }
@@ -98,8 +101,8 @@ struct APIClient {
             if let JSON = response.result.value {
               success(json: JSON)
             }
-          case .Failure(_):
-            failure(message: "BAD")
+          case .Failure(let error):
+            failure(message: error.localizedDescription
           }
         }
     }
@@ -120,8 +123,8 @@ struct APIClient {
             if let JSON = response.result.value {
               success(json: JSON)
             }
-          case .Failure(_):
-            failure(message: "BAD")
+          case .Failure(let error):
+            failure(message: error.localizedDescription)
           }
         }
     }
@@ -142,8 +145,8 @@ struct APIClient {
             if let JSON : NSArray = response.result.value as? NSArray {
               success(json: JSON)
             }
-          case .Failure(_):
-            failure(message: "BAD")
+          case .Failure(let error):
+            failure(message: error.localizedDescription)
           }
         }
     }
