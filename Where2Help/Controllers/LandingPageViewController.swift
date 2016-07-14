@@ -10,8 +10,14 @@ import UIKit
 
 class LandingPageViewController: UIViewController {
 
+  var registrationMessage: String?
+
   override func viewWillAppear(animated: Bool) {
-    if let credentials : [String : String] = UserManager.loadUserCredentialsIfPersisted() {
+    if let message: String = registrationMessage {
+      TopNotification.showSuccess(message)
+      self.registrationMessage = nil
+    }
+    else if let credentials : [String : String] = UserManager.loadUserCredentialsIfPersisted() {
       if let email = credentials["email"], password = credentials["password"] {
         APIClient.login(email, password: password,
                         success: { (user: User) -> Void in

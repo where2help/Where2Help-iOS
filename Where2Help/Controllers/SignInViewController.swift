@@ -7,16 +7,13 @@
 //
 
 import UIKit
-import GTNotification
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var emailTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
-  @IBOutlet weak var errorLabel: UILabel!
 
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
-    errorLabel.hidden = true
   }
 
   func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -31,7 +28,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   func signIn() {
     if let emailAddress = emailTextField.text, password = passwordTextField.text {
       if emailAddress.isEmpty || password.isEmpty {
-        self.showError("Please make sure to fill in your email and password!")
+        TopNotification.showError("Please make sure to fill in your email and password!")
         return
       }
       APIClient.login(emailAddress, password: password,
@@ -39,19 +36,9 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
           self.performSegueWithIdentifier("SignInSuccessful", sender: self)
         },
         failure: { (message: String) -> Void in
-          self.showError(message)
+          TopNotification.showError(message)
         }
       )
     }
-  }
-
-  func showError(message: String) {
-    let notification: GTNotification = GTNotification()
-    notification.backgroundColor = Theme.optOutColor()
-    notification.tintColor = .whiteColor()
-    notification.message = message
-    notification.animation = GTNotificationAnimation.Slide
-
-    GTNotificationManager.sharedInstance.showNotification(notification)
   }
 }

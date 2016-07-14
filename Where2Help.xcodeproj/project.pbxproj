@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21CA1A651D37DED700CCF848 /* TopNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA1A641D37DED700CCF848 /* TopNotification.swift */; };
 		21DEC02A1D1C1E7900EA7470 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEC0291D1C1E7900EA7470 /* ProfileTableViewController.swift */; };
 		3D201E59C2B6B5322EAC1431 /* Pods_Where2Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A90A37481A35B9E4479161C /* Pods_Where2Help.framework */; };
 		5B945AA722F2941ACCC4CC7C /* Pods_Where2HelpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E9BD6177299F152336977B /* Pods_Where2HelpUITests.framework */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21CA1A641D37DED700CCF848 /* TopNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopNotification.swift; path = Helpers/TopNotification.swift; sourceTree = "<group>"; };
 		21DEC0291D1C1E7900EA7470 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = Controllers/ProfileTableViewController.swift; sourceTree = "<group>"; };
 		5C4823273F8BC8802CC8A9B5 /* Pods-Where2Help.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where2Help.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Where2Help/Pods-Where2Help.debug.xcconfig"; sourceTree = "<group>"; };
 		62E9BD6177299F152336977B /* Pods_Where2HelpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Where2HelpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +219,7 @@
 				F8AA2CFC1CF7451500F108EE /* APIClient.swift */,
 				F8AA2CFF1CF7516400F108EE /* User.swift */,
 				F8A631FB1D099F45000AB8D3 /* UserManager.swift */,
+				21CA1A641D37DED700CCF848 /* TopNotification.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				93F55B1A1CB8524D00E7EF4B /* ShiftDetailInteractor.swift in Sources */,
 				93F55B271CB90BA900E7EF4B /* Locatable.swift in Sources */,
 				93A37CBF1CAD8495006089D1 /* NSDate.swift in Sources */,
+				21CA1A651D37DED700CCF848 /* TopNotification.swift in Sources */,
 				93535A6D1CB6639B0073BDB3 /* ShiftTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

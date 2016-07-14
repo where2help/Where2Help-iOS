@@ -26,7 +26,7 @@ struct APIClient {
         case .Success:
           success(message: "We've sent you an email with a confirmation link!")
         case .Failure(_):
-          failure(message: "We couldn't sign you up. Make sure you've filled in the required fields or try again later.")
+          failure(message: "Please make sure you entered the required fields\nor try again later")
         }
     }
   }

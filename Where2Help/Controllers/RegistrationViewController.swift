@@ -38,16 +38,10 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     lastName = lastNameTextField.text, phoneNumber = phoneNumberTextField.text {
       APIClient.signUp(email, password: password, passwordConfirm: passwordConfirm, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber,
          success: { (message) in
-          let alert = UIAlertController(title: "Sign Up Success!", message: message, preferredStyle: UIAlertControllerStyle.Alert)
-          alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (action) in
-            self.performSegueWithIdentifier("SignUpSuccessful", sender: self)
-          }))
-          self.presentViewController(alert, animated: true, completion: nil)
+          self.performSegueWithIdentifier("SignUpSuccessful", sender: message)
         },
          failure: { (message) in
-          let alert = UIAlertController(title: "Sign Up Failure", message: message, preferredStyle: UIAlertControllerStyle.Alert)
-          alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-          self.presentViewController(alert, animated: true, completion: nil)
+          TopNotification.showError(message)
       })
     }
   }
@@ -55,5 +49,15 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
   @IBAction func termsSwitchValueChanged(sender: UISwitch) {
     termsAccepted = sender.on
     signUpButton.enabled = termsAccepted
+  }
+
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "SignUpSuccessful" {
+      if let destinationVC = segue.destinationViewController as? LandingPageViewController {
+        if let message: String = sender as? String {
+          destinationVC.registrationMessage = message
+        }
+      }
+    }
   }
 }
