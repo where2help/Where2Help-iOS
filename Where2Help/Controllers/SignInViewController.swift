@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GTNotification
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var emailTextField: UITextField!
@@ -45,8 +46,12 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   }
 
   func showError(message: String) {
-    errorLabel.hidden = false
-    errorLabel.text = message
-    errorLabel.sizeToFit()
+    let notification: GTNotification = GTNotification()
+    notification.backgroundColor = Theme.optOutColor()
+    notification.tintColor = .whiteColor()
+    notification.message = message
+    notification.animation = GTNotificationAnimation.Slide
+
+    GTNotificationManager.sharedInstance.showNotification(notification)
   }
 }
