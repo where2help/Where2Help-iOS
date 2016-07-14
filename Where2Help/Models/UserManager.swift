@@ -57,7 +57,12 @@ class UserManager {
       if let email: String = user.email, password: String = user.password {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(email, forKey: "email")
-        try Locksmith.saveData(["password": password], forUserAccount: email)
+        if Locksmith.loadDataForUserAccount(email) != nil {
+          print("User already persisted!")
+        }
+        else {
+          try Locksmith.saveData(["password": password], forUserAccount: email)
+        }
       }
     }
     catch {
