@@ -11,6 +11,7 @@ import UIKit
 class EventsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, EventsHandler, UICollectionViewDelegateFlowLayout {
   let kEventCellNibName = "EventCollectionViewCell"
   let kEventCellID = "EventCell"
+  let kNoEventCellID = "NoEventCell"
   let kShiftDetailControllerID = "shiftDetailViewController"
 
   let interactor = EventsInteractor()
@@ -33,6 +34,7 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
   private func setupEventCell() {
     let nib = UINib(nibName: kEventCellNibName, bundle: nil)
     collectionView.registerNib(nib, forCellWithReuseIdentifier: kEventCellID)
+    collectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: kNoEventCellID)
   }
 
   private func setupDetailController() {
@@ -51,23 +53,40 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
   // MARK - TableViewDelegate/DataSource
 
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kEventCellID, forIndexPath: indexPath) as! EventCollectionViewCell
-    let event = interactor.eventFor(indexPath)
-    cell.setEvent(event)
-    cell.navigationController = navigationController
-    cell.detailViewController = detailViewController
-    return cell
+    if interactor.eventCount() > 0 {
+      let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kEventCellID, forIndexPath: indexPath) as! EventCollectionViewCell
+      let event = interactor.eventFor(indexPath)
+      cell.setEvent(event)
+      cell.navigationController = navigationController
+      cell.detailViewController = detailViewController
+      return cell
+    }
+    else {
+      let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kNoEventCellID, forIndexPath: indexPath)
+      let title = UILabel(frame: CGRectMake(0, 0, cell.bounds.size.width, 80))
+      title.text = "Nothing to see here!"
+      title.textColor = Theme.darkGray()
+      title.font = UIFont.systemFontOfSize(24)
+      title.textAlignment = NSTextAlignment.Center
+      cell.contentView.addSubview(title)
+      return cell
+    }
   }
 
   func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return interactor.eventCount()
+    return interactor.eventCount() == 0 ? 1 : interactor.eventCount()
   }
 
   func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-    let event = interactor.eventFor(indexPath)
-    let multiplier = event.shifts.count
-    let h = CGFloat(80 + (multiplier * 50))
-    let w = view.frame.width - 30
-    return CGSize(width: w, height: h)
+    if interactor.eventCount() > 0 {
+      let event = interactor.eventFor(indexPath)
+      let multiplier = event.shifts.count
+      let h = CGFloat(80 + (multiplier * 50))
+      let w = view.frame.width - 30
+      return CGSize(width: w, height: h)
+    }
+    else {
+      return CGSize(width: view.frame.width - 30, height: view.frame.height)
+    }
   }
 }
