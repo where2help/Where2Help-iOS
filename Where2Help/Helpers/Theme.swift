@@ -24,4 +24,8 @@ struct Theme {
   static func youreInColor() -> UIColor {
     return UIColor(red:0.55, green:0.76, blue:0.32, alpha:1.0)
   }
+
+  static func darkGray() -> UIColor {
+    return UIColor(red:0.51, green:0.51, blue:0.51, alpha:1.0)
+  }
 }
