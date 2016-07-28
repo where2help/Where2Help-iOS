@@ -17,7 +17,7 @@ struct Shift: JSONJoy {
     let volunteersNeeded: Int!
     let volunteersCount: Int!
     let createdAt: NSDate!
-    let currentUserAssigned: Bool!
+    var currentUserAssigned: Bool!
     
     init(_ decoder: JSONDecoder) throws {
         ID = try decoder["id"].getInt()

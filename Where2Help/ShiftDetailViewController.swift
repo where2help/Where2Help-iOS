@@ -30,10 +30,13 @@ class ShiftDetailViewController: UIViewController, ShiftHandler {
     super.viewDidLoad()
   }
 
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    interactor.setup(self, event: event, shift: shift)
+  }
+
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-    interactor.setup(self, event: event, shift: shift)
-    shift.currentUserAssigned.boolValue ? imInButton.optedIn() : imInButton.optedOut()
   }
 
   // MARK: - ShiftHandler
@@ -72,6 +75,7 @@ class ShiftDetailViewController: UIViewController, ShiftHandler {
     timeLabel.text = shift.timespanLabelText()
     dateLabel.text = shift.dateString()
     volunteerCountLabel.text = "\(shift.volunteersOutOfLabelText()) Volunteers"
+    shift.shift.currentUserAssigned.boolValue ? imInButton.optedIn() : imInButton.optedOut()
   }
 
   ///////////////////////////////////

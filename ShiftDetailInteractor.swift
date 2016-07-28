@@ -24,14 +24,16 @@ class ShiftDetailInteractor {
     if let user = UserManager.currentUser {
       if shift.currentUserAssigned.boolValue {
         APIClient.optOut(user, shift: self.shift, success: { (json) in
-          print("Opted out")
+          self.shift.currentUserAssigned = false
+          self.loadShift()
         }) { (message) in
           print("No good")
         }
       }
       else {
         APIClient.optIn(user, shift: self.shift, success: { (json) in
-          print("Opted In")
+          self.shift.currentUserAssigned = true
+          self.loadShift()
         }) { (message) in
           print("No good")
         }
