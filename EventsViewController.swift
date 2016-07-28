@@ -15,6 +15,7 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
   let kShiftDetailControllerID = "shiftDetailViewController"
 
   let interactor = EventsInteractor()
+  let refreshControl = UIRefreshControl()
 
   var detailViewController: ShiftDetailViewController!
 
@@ -24,15 +25,22 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     super.viewDidLoad()
     setupEventCell()
     setupDetailController()
+    refreshControl.addTarget(self, action: #selector(EventsViewController.refresh), forControlEvents: UIControlEvents.ValueChanged)
+    collectionView.addSubview(refreshControl)
     //        let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
     //        let w = view.frame.width - 30
     //        flowLayout.itemSize =
   }
 
-  override func viewWillAppear(animated: Bool) {
-    super.viewWillAppear(animated)
+  func refresh() {
     TopNotification.showLoading(self, message: "Loading events...")
     interactor.setup(handler: self)
+    refreshControl.endRefreshing()
+  }
+
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    refresh()
   }
 
   private func setupEventCell() {
