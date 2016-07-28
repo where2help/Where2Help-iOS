@@ -56,7 +56,8 @@ class ShiftDetailViewController: UIViewController, ShiftHandler {
 
   // MARK: - Actions
 
-  @IBAction func imInPressed(sender: UIButton) {
+  @IBAction func imInPressed(sender: OptInAndOutButton) {
+    sender.showLoading()
     interactor.toggleOptIn()
   }
 
