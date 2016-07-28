@@ -31,7 +31,7 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
 
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
-    TopNotification.showSuccess("Loading events...")
+    TopNotification.showLoading(self, message: "Loading events...")
     interactor.setup(handler: self)
   }
 
@@ -52,6 +52,7 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
   func handleEventsUpdate() {
     print("Events updated")
     collectionView.reloadData()
+    TopNotification.hideNotifications(self)
   }
 
   // MARK - TableViewDelegate/DataSource

@@ -7,27 +7,27 @@
 //
 
 import UIKit
-import GTNotification
+import RADInfoBannerView
 
 struct TopNotification {
-  static func showError(message: String) {
-    let notification = notificationWithMessage(message)
-    notification.backgroundColor = Theme.optOutColor()
-    notification.tintColor = .whiteColor()
-    GTNotificationManager.sharedInstance.showNotification(notification)
+  static func showError(controller: UIViewController, message: String) {
+    let infoBannerView = RADInfoBannerView(text: message, showActivityIndicatorView: false)
+    infoBannerView.backgroundColor = .redColor()
+    infoBannerView.show(inController: controller).hide(afterDelay: 3.0)
   }
 
-  static func showSuccess(message: String) {
-    let notification = notificationWithMessage(message)
-    notification.backgroundColor = Theme.optInColor()
-    notification.tintColor = .whiteColor()
-    GTNotificationManager.sharedInstance.showNotification(notification)
+  static func showSuccess(controller: UIViewController, message: String) {
+    let infoBannerView = RADInfoBannerView(text: message, showActivityIndicatorView: false)
+    infoBannerView.backgroundColor = Theme.optInColor()
+    infoBannerView.show(inController: controller).hide(afterDelay: 3.0)
   }
 
-  static private func notificationWithMessage(message: String) -> GTNotification {
-    let notification: GTNotification = GTNotification()
-    notification.message = message
-    notification.animation = GTNotificationAnimation.Slide
-    return notification
+  static func showLoading(controller: UIViewController, message: String) {
+    let infoBannerView = RADInfoBannerView(text: message, showActivityIndicatorView: true)
+    infoBannerView.show(inController: controller)
+  }
+
+  static func hideNotifications(controller: UIViewController) {
+    RADInfoBannerView.hideAllInfoBannerView(inController: controller, animated: true)
   }
 }

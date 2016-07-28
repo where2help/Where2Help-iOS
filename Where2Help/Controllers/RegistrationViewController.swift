@@ -41,7 +41,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
           self.performSegueWithIdentifier("SignUpSuccessful", sender: message)
         },
          failure: { (message) in
-          TopNotification.showError(message)
+          TopNotification.showError(self, message: message)
       })
     }
   }

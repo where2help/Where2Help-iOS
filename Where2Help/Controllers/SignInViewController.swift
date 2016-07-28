@@ -28,7 +28,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
   func signIn() {
     if let emailAddress = emailTextField.text, password = passwordTextField.text {
       if emailAddress.isEmpty || password.isEmpty {
-        TopNotification.showError("Please make sure to fill in your email and password!")
+        TopNotification.showError(self, message: "Please make sure to fill in your email and password!")
         return
       }
       APIClient.login(emailAddress, password: password,
@@ -36,7 +36,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
           self.performSegueWithIdentifier("SignInSuccessful", sender: self)
         },
         failure: { (message: String) -> Void in
-          TopNotification.showError(message)
+          TopNotification.showError(self, message: message)
         }
       )
     }

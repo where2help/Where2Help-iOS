@@ -14,7 +14,7 @@ class LandingPageViewController: UIViewController {
 
   override func viewWillAppear(animated: Bool) {
     if let message: String = registrationMessage {
-      TopNotification.showSuccess(message)
+      TopNotification.showSuccess(self, message: message)
       self.registrationMessage = nil
     }
     else if let credentials : [String : String] = UserManager.loadUserCredentialsIfPersisted() {
