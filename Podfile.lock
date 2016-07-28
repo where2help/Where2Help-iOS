@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (3.2.1)
-  - GTNotification (1.4.3)
   - IQKeyboardManagerSwift (4.0.4)
   - JSONJoy-Swift (2.0.0)
   - Locksmith (2.0.8)
@@ -24,26 +23,27 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (3.2.0):
     - PromiseKit/CorePromise
+  - RADInfoBannerView (1.0.2)
 
 DEPENDENCIES:
   - Alamofire (= 3.2.1)
-  - GTNotification (~> 1.4)
   - IQKeyboardManagerSwift (~> 4.0)
   - JSONJoy-Swift (~> 2.0.0)
   - Locksmith (~> 2.0.8)
   - NetworkActivityIndicatorManager (~> 0.3)
   - PromiseKit (~> 3.0)
+  - RADInfoBannerView (~> 1.0)
 
 SPEC CHECKSUMS:
   Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
-  GTNotification: 17eeac5f2f0fc62b5ed7343e31e04172134ffcd7
   IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
   JSONJoy-Swift: 9dc31dfb9e551c3ae7781513a86e369598102653
   Locksmith: a8ed41ac4c06506ea8cb199d8ec8a8d3d108eb2a
   NetworkActivityIndicatorManager: 80d5de13bfc782a55d394bff534f07289357fdb7
   OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
   PromiseKit: 1db024241265f428137a9f3c00ff9590740c4be6
+  RADInfoBannerView: f86b1f1a5dca15a8e9bdd8e6653ff09ea485cd8f
 
-PODFILE CHECKSUM: 267264dbeea67242ca2bcc0112df86f2fb7e2f2c
+PODFILE CHECKSUM: b812daa708667c575138cce5be4976218023c9d2
 
 COCOAPODS: 1.0.0

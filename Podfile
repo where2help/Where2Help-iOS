@@ -10,7 +10,7 @@ target 'Where2Help' do
   pod 'Locksmith', "~> 2.0.8"
   pod 'IQKeyboardManagerSwift', '~> 4.0'
   pod 'NetworkActivityIndicatorManager', '~> 0.3'
-  pod 'GTNotification', '~> 1.4'
+  pod 'RADInfoBannerView', '~> 1.0'
 end
 
 target 'Where2HelpTests' do
