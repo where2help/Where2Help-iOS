@@ -40,6 +40,7 @@ class EventCollectionViewCell: UICollectionViewCell, UITableViewDataSource, UITa
     func setEvent(event: Event) {
         self.event = event
         updateCellUI()
+        tableView.reloadData()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
