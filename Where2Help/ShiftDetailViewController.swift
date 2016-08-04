@@ -32,7 +32,29 @@ class ShiftDetailViewController: UIViewController, ShiftHandler {
 
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
+    let shareButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: #selector(shareTapped))
+    self.navigationItem.rightBarButtonItem = shareButton
     interactor.setup(self, event: event, shift: shift)
+  }
+
+  func shareTapped(sender: UIView) {
+    let dateFormatter = NSDateFormatter()
+    dateFormatter.dateStyle = .MediumStyle
+    dateFormatter.timeStyle = .ShortStyle
+    let textToShare = "I'm helping out at \(event.address!) on \(dateFormatter.stringFromDate(shift.startsAt))!"
+
+    if let myWebsite = NSURL(string: event.url)  {
+      let objectsToShare = [textToShare, myWebsite]
+      let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+
+      //New Excluded Activities Code
+      activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+      //
+
+      activityVC.popoverPresentationController?.sourceView = sender
+      self.presentViewController(activityVC, animated: true, completion: nil)
+    }
+
   }
 
   override func viewDidLayoutSubviews() {
